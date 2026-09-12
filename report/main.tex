@@ -40,7 +40,7 @@ Musical context includes instrumentation, tempo, mood, and production quality. W
 
 The resulting experiment addresses three questions. First, how predictive are caption, spectrogram, and segment-graph representations for the same 20 labels? Second, does supervised graph--text fusion improve upon BERT alone? Third, can contrastive training align audio and captions sufficiently to support retrieval and label-prototype readout? These questions distinguish classification from cross-modal correspondence: a strong caption classifier need not imply a strong audio retriever.
 
-All four assignment stages are implemented~\cite{guideline}. The independent audit documents the controlled experimental chain supporting the reported comparisons~\cite{audit}.
+All four assignment stages are implemented. The independent audit documents the controlled experimental chain supporting the reported comparisons.
 
 \section{Related Work and Background}\label{sec:background}
 BERT learns contextual text representations through bidirectional language-model pretraining and supports task adaptation with a classification head~\cite{bert}. Here it encodes human-authored music captions, not transcribed lyrics. GraphSAGE aggregates neighborhood features to construct inductive graph representations~\cite{sage}; GAT instead learns attention weights within graph neighborhoods~\cite{gat}. Both provide appropriate mechanisms for testing whether local temporal links and segment similarity help summarize music clips. Learned attention weights, however, are not automatically explanations of musical structure.
@@ -281,7 +281,7 @@ The highest-priority next analysis is a read-only caption--label overlap audit w
 \onecolumn
 \appendices
 \section{Audit, Configuration, and Qualitative Evidence}\label{sec:appendix}
-Table~\ref{tab:audit} summarizes the 76-script audit. ``Not verified'' marks a source-evidence limit, not a confirmed failure. The nine minor-fix entries are 27, 57--59, 61, 68, 70, 73, and 76; Script 25 is redundant. The audit contains the full per-script dispositions~\cite{audit}.
+Table~\ref{tab:audit} summarizes the 76-script audit. ``Not verified'' marks a source-evidence limit, not a confirmed failure. The nine minor-fix entries are 27, 57--59, 61, 68, 70, 73, and 76; Script 25 is redundant. The audit contains the full per-script dispositions.
 \begin{table}[!ht]\centering\small
 \caption{Final audit disposition of 76 scripts.}\label{tab:audit}
 \begin{tabular}{@{}lr@{}}\toprule
