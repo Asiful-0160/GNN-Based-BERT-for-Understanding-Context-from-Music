@@ -1,0 +1,84 @@
+project:
+  root: .
+  name: gnn_bert_music
+environment:
+  python: 3.12.3
+  pytorch: 2.13.0+cu130
+  transformers: 5.15.1
+  pyg: 2.8.0.post1
+  gpu: NVIDIA GeForce RTX 4080 SUPER
+  gpu_vram_gb: 16
+  ram_gb: 64
+dataset:
+  name: MusicCaps
+  hf_id: google/MusicCaps
+  expected_metadata_rows: 5521
+  audit:
+    sample_size: 200
+    seed: 42
+    duration_tolerance_seconds: 0.5
+  minimum_usable_clips: 3000
+  split:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+    seed: 42
+    group_by: source_id
+labels:
+  top_k: 20
+  preserve_complete_phrases: true
+  provisional_min_train_support: 30
+  final_min_train_support: 30
+audio:
+  duration_seconds: 10.0
+  sample_rate: 22050
+  mono: true
+  fixed_samples: 220500
+  n_fft: 2048
+  hop_length: 512
+  n_mels: 128
+  n_chroma: 12
+  center: true
+  expected_mel_frames: 431
+  fixed_mel_frames: 431
+  mel:
+    representation: log_mel_db
+    normalization: per_track_zscore
+    epsilon: 1.0e-08
+  chroma:
+    normalization: native
+    use_for_similarity: true
+text:
+  model_name: bert-base-uncased
+  max_length: 112
+  percentile: 95
+  round_to_multiple: 16
+  max_allowed_length: 512
+graph:
+  segment_window_seconds: 2.0
+  segment_stride_seconds: 1.0
+  expected_nodes_per_track: 9
+  node_input_dim: 140
+  node_embedding_dim: 64
+  temporal_edges_bidirectional: true
+  similarity_edges_bidirectional: true
+  similarity_threshold: 0.85
+  similarity_nonlocal_only: true
+  similarity_selection: "strongest_first"
+  similarity_extra_degree_cap: 2
+  sanity:
+    sample_tracks: 5
+    max_density_ratio: 0.9
+training:
+  selection_metric: val_auc_pr
+  seeds:
+    model_selection: 42
+    final:
+    - 42
+    - 1337
+    - 2026
+evaluation:
+  threshold:
+    minimum: 0.3
+    maximum: 0.7
+    step: 0.05
