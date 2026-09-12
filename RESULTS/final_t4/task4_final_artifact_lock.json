@@ -1,0 +1,187 @@
+{
+  "architecture_reselection_allowed": false,
+  "checkpoint_replacement_allowed": false,
+  "created_utc": "2026-09-12T02:41:04.829125+00:00",
+  "final_audit_sha256": "712bb131762a9791550db2a4b98aa271824c9c878f54d9ef7fe4917c846a3413",
+  "final_outputs": {
+    "audit": {
+      "path": "results/runs/task4/final/task4_final_audit.json",
+      "sha256": "712bb131762a9791550db2a4b98aa271824c9c878f54d9ef7fe4917c846a3413"
+    },
+    "figure_human": {
+      "path": "results/runs/task4/final/figures/task4_human_ratings.png",
+      "sha256": "879286146ab52d9c369ee278b1b17393c33c778cd985baa4071dc54785147d9e"
+    },
+    "figure_test_recall": {
+      "path": "results/runs/task4/final/figures/task4_test_recall_at_k.png",
+      "sha256": "120a0566fae6374344850e508fbb24d79bde236a34efe0e19e35c5f3c6194f79"
+    },
+    "figure_val_vs_test": {
+      "path": "results/runs/task4/final/figures/task4_val_vs_test_mR.png",
+      "sha256": "c48305370759382160f3057fd68091404e8a652688f411098e718fe86f95d749"
+    },
+    "figure_zero_shot": {
+      "path": "results/runs/task4/final/figures/task4_zero_shot_macro_ap.png",
+      "sha256": "4c6f26de899afe4dc3c17a31da41988de3a4f1b20ecd202ab955a58c09b3ec36"
+    },
+    "summary": {
+      "path": "results/runs/task4/final/task4_final_summary.json",
+      "sha256": "2e625cd0ed519d93f4f60486be22205209b43bd3ecb34a7d4a77c750388f0498"
+    },
+    "table_human_table": {
+      "path": "results/runs/task4/final/tables/task4_human_eval_final.csv",
+      "sha256": "c68ff4397ff3fb667aec0cae3bdef15b9f7903b65416b656c22fc239cf301a77"
+    },
+    "table_key_results_table": {
+      "path": "results/runs/task4/final/tables/task4_key_results.csv",
+      "sha256": "f20ca58bad1bf2362448a7fe79b71bfd790a6e0b1bb33e233dadf0067c8f6733"
+    },
+    "table_retrieval_table": {
+      "path": "results/runs/task4/final/tables/task4_retrieval_final.csv",
+      "sha256": "0e530adf99dc18a8397eaa6f0e167d366d4f174128786cfe5341bea4e50795a4"
+    },
+    "table_task3_comparison_table": {
+      "path": "results/runs/task4/final/tables/task3_supervised_vs_task4_zeroshot.csv",
+      "sha256": "b076ba89725ea30cef067ee7027933b0c950208973ba22f48330e9cf7c6a9935"
+    },
+    "table_zero_shot_table": {
+      "path": "results/runs/task4/final/tables/task4_zero_shot_final.csv",
+      "sha256": "9fbc2065130f5c8700b87ade7c1246fa80e8ff429da0722ceb519db9676b3db9"
+    }
+  },
+  "final_seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "final_summary_sha256": "2e625cd0ed519d93f4f60486be22205209b43bd3ecb34a7d4a77c750388f0498",
+  "lock_type": "task4_terminal_artifact_lock",
+  "script76": {
+    "path": "scripts/76_finalize_task4.py",
+    "sha256": "3789a7e40e4c722a0fc89869d192f79e82ecea4524fae8202b85180db8a6aec1"
+  },
+  "seed_replacement_allowed": false,
+  "selected_variant": "T4-B",
+  "source_artifacts": {
+    "checkpoint_1337": {
+      "path": "models/task4_candidates/task4_T4-B_seed1337_multiseed_best.pt",
+      "sha256": "824a98d52327d513f67cfa21cf702a4597f51a91c0b17cea1ea7d10628b4b918"
+    },
+    "checkpoint_2026": {
+      "path": "models/task4_candidates/task4_T4-B_seed2026_multiseed_best.pt",
+      "sha256": "a328d029b46ef14a4199cff0604f190f806cf953c7c4ad75a0f884210bb743b9"
+    },
+    "checkpoint_42": {
+      "path": "models/task4_candidates/task4_T4-B_seed42_best.pt",
+      "sha256": "2be12c7e6fdc851b2b1efae0a7bed2c495cbefb5ae90a4f491c54a72ec8e9ace"
+    },
+    "design": {
+      "path": "results/runs/task4/task4_contrastive_design.json",
+      "sha256": "61ed1263476e631374790c9669ab4aa96e3b5cb295436d4e273da66d4da556db"
+    },
+    "design_lock": {
+      "path": "results/runs/task4/task4_contrastive_design_lock.json",
+      "sha256": "53f50205e712833ec4efb506b9b6d9118dcf46f51b72c5907f33cd61ddca612c"
+    },
+    "human_package": {
+      "path": "results/runs/task4/task4_human_eval_package.json",
+      "sha256": "0968fdd35ff5b05d411e29c9b764a40116adf1788ea5aa58bc56ec14222defc0"
+    },
+    "human_package_lock": {
+      "path": "results/runs/task4/task4_human_eval_package_lock.json",
+      "sha256": "8e172b134eaa9cb9f65ae0473cc6a7448e144fdaba73c5b8b3f80112b35fa673"
+    },
+    "human_per_item": {
+      "path": "results/runs/task4/task4_human_eval_per_item.csv",
+      "sha256": "d272d3f72f858a2c30a4f0381297b880add6226edc167130e2ddcb0ec539ec14"
+    },
+    "human_result": {
+      "path": "results/runs/task4/task4_human_eval_result.json",
+      "sha256": "a52db6f229ce400e200526bf4a0a1a958f2c783d047dd457130da335adad7c34"
+    },
+    "human_result_lock": {
+      "path": "results/runs/task4/task4_human_eval_result_lock.json",
+      "sha256": "8a8884397d07c3c8da001a281212e420e6ba8d174c113e120b9656d487872b4f"
+    },
+    "model_selection": {
+      "path": "results/runs/task4/task4_model_selection.json",
+      "sha256": "831e1535cfe6f45a646f1732ecf268db02c5214aa48404fd07fb3ae8ff5e41c5"
+    },
+    "model_selection_lock": {
+      "path": "results/runs/task4/task4_model_selection_lock.json",
+      "sha256": "a1aa9d2420a97c86b0f3709227ff22d1ee3ccf111010733b2bf705dee5eb6bb6"
+    },
+    "multiseed_csv": {
+      "path": "results/runs/task4/task4_T4-B_multiseed_validation.csv",
+      "sha256": "f3b09fe49470fb351fcdf9b0fe5f72930ddeaeecc9b9e327ad49af599b190b47"
+    },
+    "multiseed_lock": {
+      "path": "results/runs/task4/task4_T4-B_multiseed_lock.json",
+      "sha256": "d6ab94b262903c33f28c8eb57c2de2e6c1e7fd974ea232186eef8ee19a27c674"
+    },
+    "multiseed_summary": {
+      "path": "results/runs/task4/task4_T4-B_multiseed_summary.json",
+      "sha256": "0bd0bb281448706cd86a124295be8ae682d5b32b74d7e517742caec486959297"
+    },
+    "pretest_lock": {
+      "path": "results/runs/task4/task4_pretest_protocol_lock.json",
+      "sha256": "dddbd32013dd7e9912e0df0fa72d035249abae8f4c83f6313b57a99931f00836"
+    },
+    "pretest_protocol": {
+      "path": "results/runs/task4/task4_pretest_protocol.json",
+      "sha256": "f1f4651c9bffab2295ec8ef44d17f2084430386585fb2e9fd489d0bc2af93f7c"
+    },
+    "qualitative_csv": {
+      "path": "results/runs/task4/task4_qualitative_caption_to_audio_top3.csv",
+      "sha256": "e8cb952c96fa1be6bf6ac44959e1e23a1934216bb38c28ec965c5ab33aacc027"
+    },
+    "qualitative_json": {
+      "path": "results/runs/task4/task4_qualitative_caption_to_audio_top3.json",
+      "sha256": "f3dfd08a0cadab3edd5818f358c4970587f89077ea18d370fa4a04ba635ef69c"
+    },
+    "qualitative_lock": {
+      "path": "results/runs/task4/task4_qualitative_caption_to_audio_top3_lock.json",
+      "sha256": "8c2c898914674e3bcda0bbfda1d007c8460af38c7d9eaa19b54712c23d36ae76"
+    },
+    "test_manifest": {
+      "path": "results/runs/task4/task4_test_retrieval_manifest.csv",
+      "sha256": "e3e726814fdd890af0951fd1c4726a4de5f506180f4ae6982db51e89e1d39431"
+    },
+    "test_retrieval_csv": {
+      "path": "results/runs/task4/task4_T4-B_test_retrieval_per_seed.csv",
+      "sha256": "6e8e97838898a66e9df8486ea3891257b9bebe592456d26558d95a7816bf9764"
+    },
+    "test_retrieval_lock": {
+      "path": "results/runs/task4/task4_T4-B_test_retrieval_lock.json",
+      "sha256": "45a3adc75581b5ddf0f28fe08ecb70c00ddb3bd6d3c665f82fe4e4b556d40504"
+    },
+    "test_retrieval_summary": {
+      "path": "results/runs/task4/task4_T4-B_test_retrieval_summary.json",
+      "sha256": "77e08ce11af9547319515137197ae122c83224d1a445619c6daef799a722af90"
+    },
+    "zero_shot_label_csv": {
+      "path": "results/runs/task4/task4_zero_shot_test_per_label.csv",
+      "sha256": "ed8df061d979fd4686c918d212550db34cb24c99b2bc5379ecedae7a4427d60d"
+    },
+    "zero_shot_lock": {
+      "path": "results/runs/task4/task4_zero_shot_test_lock.json",
+      "sha256": "2552be17a05f7349449b9dc6a7f0d1f8f4382658ab6ebf2f9fcc36e8990d8611"
+    },
+    "zero_shot_mode_csv": {
+      "path": "results/runs/task4/task4_zero_shot_test_per_seed_mode.csv",
+      "sha256": "683c4468068b983e31bf7239fdab225df413d0f28446ff83c2af461aed0e5bbe"
+    },
+    "zero_shot_summary": {
+      "path": "results/runs/task4/task4_zero_shot_test_summary.json",
+      "sha256": "2a288a2921267f617466a8bc4507300ceb6461a9c1e96bcf41dbfcb68a2319c8"
+    },
+    "zero_shot_val_freeze": {
+      "path": "results/runs/task4/task4_zero_shot_val_freeze.json",
+      "sha256": "fffa1a96a7b0f9fd684083f44e9bf90dfa326eafe07923f4ba2697b58ca05aad"
+    }
+  },
+  "status": "TASK4_FINAL_LOCKED",
+  "test_metric_redefinition_allowed": false,
+  "test_retraining_allowed": false,
+  "version": 1
+}

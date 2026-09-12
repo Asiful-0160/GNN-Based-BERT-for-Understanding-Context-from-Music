@@ -1,0 +1,104 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{guideline}
+\citation{audit}
+\citation{bert}
+\citation{sage}
+\citation{gat}
+\citation{cpc}
+\citation{clip}
+\citation{musiccaps}
+\citation{musiclm}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction and Motivation}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{I}{1}{Introduction and Motivation}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Related Work and Background}{1}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{II}{1}{Related Work and Background}{section.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Problem Formulation}{1}{section.3}\protected@file@percent }
+\newlabel{sec:problem}{{III}{1}{Problem Formulation}{section.3}{}}
+\newlabel{eq:tuple}{{1}{1}{Problem Formulation}{equation.1}{}}
+\newlabel{eq:message}{{2}{1}{Problem Formulation}{equation.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Audited dataset and feature specification.}}{1}{table.1}\protected@file@percent }
+\newlabel{tab:data}{{I}{1}{Audited dataset and feature specification}{table.1}{}}
+\newlabel{eq:readout}{{3}{1}{Problem Formulation}{equation.3}{}}
+\newlabel{eq:bce}{{4}{1}{Problem Formulation}{equation.4}{}}
+\newlabel{eq:nce}{{5}{1}{Problem Formulation}{equation.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Dataset and Preprocessing}{1}{section.4}\protected@file@percent }
+\newlabel{sec:data}{{IV}{1}{Dataset and Preprocessing}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Acquisition and canonical split}{1}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Text and labels}{2}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Audio features and graph construction}{2}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Methodology}{2}{section.5}\protected@file@percent }
+\newlabel{sec:methods}{{V}{2}{Methodology}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Task 1: BERT baseline}{2}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Supplied G2 example for track \texttt {mc\_RFbWkL818XQ\_30\_40}. Temporal and sparse nonlocal links connect mean-pooled audio segments.}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:graph}{{1}{2}{Supplied G2 example for track \protect \texttt {mc\_RFbWkL818XQ\_30\_40}. Temporal and sparse nonlocal links connect mean-pooled audio segments}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}Task 2: Audio-only models}{2}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Task 3: GNN--BERT fusion}{2}{subsection.5.3}\protected@file@percent }
+\newlabel{eq:attention}{{6}{2}{Task 3: GNN--BERT fusion}{equation.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Task 4: Contrastive alignment and readout}{3}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Experimental Setup}{3}{section.6}\protected@file@percent }
+\newlabel{sec:setup}{{VI}{3}{Experimental Setup}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Selection, baselines, and metrics}{3}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Tasks 1--2 validation Macro AP.}}{3}{table.2}\protected@file@percent }
+\newlabel{tab:selection}{{II}{3}{Tasks 1--2 validation Macro AP}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Reproducibility and numerical conventions}{3}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Results}{3}{section.7}\protected@file@percent }
+\newlabel{sec:results}{{VII}{3}{Results}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-A}}Tasks 1 and 2: Validation selection}{3}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-B}}Task 3: Fusion and final supervised comparison}{3}{subsection.7.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Supplied validation Macro AP curves for T1-B (left), A1 CNN (center), and M3 Phase B (right). Plots retain their original metric wording; the implementation measures Average Precision. These are validation trajectories, not repeated TEST selection.}}{4}{figure.2}\protected@file@percent }
+\newlabel{fig:training}{{2}{4}{Supplied validation Macro AP curves for T1-B (left), A1 CNN (center), and M3 Phase B (right). Plots retain their original metric wording; the implementation measures Average Precision. These are validation trajectories, not repeated TEST selection}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Task-3 validation Macro AP from the audit.}}{4}{table.3}\protected@file@percent }
+\newlabel{tab:fusionval}{{III}{4}{Task-3 validation Macro AP from the audit}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Supplied final TEST comparison. ``AUC-PR'' denotes Macro AP. Seed SD is estimable only for the three-run models in Table~\ref {tab:test}; visually negligible bars for single-run models do not demonstrate zero variability.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:test}{{3}{4}{Supplied final TEST comparison. ``AUC-PR'' denotes Macro AP. Seed SD is estimable only for the three-run models in Table~\ref {tab:test}; visually negligible bars for single-run models do not demonstrate zero variability}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-C}}Task 4: Retrieval and prototype readout}{4}{subsection.7.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Supplied bidirectional TEST retrieval plot for T4-B. Exact matching remains modest despite improvement over random ranking.}}{4}{figure.4}\protected@file@percent }
+\newlabel{fig:retrieval}{{4}{4}{Supplied bidirectional TEST retrieval plot for T4-B. Exact matching remains modest despite improvement over random ranking}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VII-D}}Human evaluation}{4}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Discussion}{4}{section.8}\protected@file@percent }
+\newlabel{sec:discussion}{{VIII}{4}{Discussion}{section.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Frozen supervised TEST results. Three-run entries show mean $\pm $ sample SD; one-run entries have no estimated seed SD. Graph models and cross-attention use seed 42. Values retain the display precision of the saved comparison table.}}{5}{table.4}\protected@file@percent }
+\newlabel{tab:test}{{IV}{5}{Frozen supervised TEST results. Three-run entries show mean $\pm $ sample SD; one-run entries have no estimated seed SD. Graph models and cross-attention use seed 42. Values retain the display precision of the saved comparison table}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Task-4 three-seed TEST retrieval. Recalls are means; mR uncertainty is population SD.}}{5}{table.5}\protected@file@percent }
+\newlabel{tab:retrieval}{{V}{5}{Task-4 three-seed TEST retrieval. Recalls are means; mR uncertainty is population SD}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces TEST tag readout, mean $\pm $ population SD for Task 4. The supervised reference is shown for comparison.}}{5}{table.6}\protected@file@percent }
+\newlabel{tab:prototype}{{VI}{5}{TEST tag readout, mean $\pm $ population SD for Task 4. The supervised reference is shown for comparison}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Supplied listener ratings for the ten fixed caption-to-audio top-one retrievals. The study is descriptive and small; variability does not support a population-level quality claim.}}{5}{figure.5}\protected@file@percent }
+\newlabel{fig:human}{{5}{5}{Supplied listener ratings for the ten fixed caption-to-audio top-one retrievals. The study is descriptive and small; variability does not support a population-level quality claim}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Limitations and Threats to Validity}{5}{section.9}\protected@file@percent }
+\newlabel{sec:limits}{{IX}{5}{Limitations and Threats to Validity}{section.9}{}}
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{guideline}{1}
+\bibcite{audit}{2}
+\bibcite{bert}{3}
+\bibcite{sage}{4}
+\bibcite{gat}{5}
+\bibcite{cpc}{6}
+\bibcite{clip}{7}
+\bibcite{musiccaps}{8}
+\bibcite{musiclm}{9}
+\@writefile{toc}{\contentsline {section}{\numberline {X}Conclusion and Future Work}{6}{section.10}\protected@file@percent }
+\newlabel{sec:conclusion}{{X}{6}{Conclusion and Future Work}{section.10}{}}
+\@writefile{toc}{\contentsline {section}{References}{6}{section*.3}\protected@file@percent }
+\citation{audit}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  A: Audit, Configuration, and Qualitative Evidence}{7}{section*.4}\protected@file@percent }
+\newlabel{sec:appendix}{{A}{7}{\appendixname \nobreakspace \thesectiondis \\* Audit, Configuration, and Qualitative Evidence}{section*.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Final audit disposition of 76 scripts.}}{7}{table.7}\protected@file@percent }
+\newlabel{tab:audit}{{VII}{7}{Final audit disposition of 76 scripts}{table.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces Additional audited configuration.}}{7}{table.8}\protected@file@percent }
+\newlabel{tab:config}{{VIII}{7}{Additional audited configuration}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Three supplied post-hoc classification examples, using frozen predictions. The graph in Figure~\ref {fig:graph} belongs to the third case. These are label-level cases; complete caption/graph-path alignment evidence was not supplied.}}{7}{table.9}\protected@file@percent }
+\newlabel{tab:cases}{{IX}{7}{Three supplied post-hoc classification examples, using frozen predictions. The graph in Figure~\ref {fig:graph} belongs to the third case. These are label-level cases; complete caption/graph-path alignment evidence was not supplied}{table.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Reserved Task-3 t-SNE visualization from frozen fusion embeddings. Interpretation awaits the actual supplied figure and its label/color specification.}}{7}{figure.6}\protected@file@percent }
+\newlabel{fig:tsne}{{6}{7}{Reserved Task-3 t-SNE visualization from frozen fusion embeddings. Interpretation awaits the actual supplied figure and its label/color specification}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces Human ratings by fixed query: five listeners per item. SD is sample SD; descriptors summarize the questionnaire caption, not the retrieved audio.}}{8}{table.10}\protected@file@percent }
+\newlabel{tab:human}{{X}{8}{Human ratings by fixed query: five listeners per item. SD is sample SD; descriptors summarize the questionnaire caption, not the retrieved audio}{table.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Reserved qualitative panel for the ten pre-frozen caption queries and their seed-42 top-three audio retrievals. Actual retrieval examples must come from the frozen Script-74 export.}}{8}{figure.7}\protected@file@percent }
+\newlabel{fig:qualitative}{{7}{8}{Reserved qualitative panel for the ten pre-frozen caption queries and their seed-42 top-three audio retrievals. Actual retrieval examples must come from the frozen Script-74 export}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{Appendix\nobreakspace  B: Artifact Provenance}{8}{section*.5}\protected@file@percent }
+\newlabel{sec:provenance}{{B}{8}{\appendixname \nobreakspace \thesectiondis \\* Artifact Provenance}{section*.5}{}}
+\gdef \@abspage@last{9}

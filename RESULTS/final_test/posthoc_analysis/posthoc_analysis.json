@@ -1,0 +1,515 @@
+{
+  "analysis_scope": "descriptive and exploratory post-hoc analysis of frozen Script-60 TEST outputs only",
+  "artifact_type": "posthoc_statistical_error_fusion_analysis",
+  "bootstrap": {
+    "aggregation": "metric calculated separately for each of 3 seeds, then averaged; Fusion-BERT difference",
+    "confidence_interval": "95% percentile",
+    "interpretation": "exploratory post-hoc uncertainty analysis; not a preregistered confirmatory significance test",
+    "method": "paired nonparametric track-level bootstrap",
+    "replicates": 2000,
+    "results": {
+      "macro_ap": {
+        "bootstrap_fraction_positive": 0.5165,
+        "ci_lower": -0.009306311251077653,
+        "ci_upper": 0.010398275113103596,
+        "includes_zero": true
+      },
+      "macro_f1": {
+        "bootstrap_fraction_positive": 0.609,
+        "ci_lower": -0.007562238242803917,
+        "ci_upper": 0.009168310357085747,
+        "includes_zero": true
+      },
+      "micro_f1": {
+        "bootstrap_fraction_positive": 0.805,
+        "ci_lower": -0.004354938514942557,
+        "ci_upper": 0.010884843485864892,
+        "includes_zero": true
+      }
+    },
+    "rng_seed": 42
+  },
+  "case_study_candidate_rule": {
+    "correct_high_confidence": "exact label-set match with highest average classification confidence",
+    "hard_example": "distinct example with smallest mean distance to threshold among its three closest labels",
+    "incorrect_high_confidence": "incorrect example with largest confidence attached to a false positive or false negative",
+    "representative_model": "Early Fusion seed42"
+  },
+  "confusion_analysis": {
+    "top10_confusions_increased_by_fusion": [
+      {
+        "bert_count_across_3_seeds": 4,
+        "fusion_count_across_3_seeds": 9,
+        "fusion_minus_bert": 5,
+        "missed_true_label": "male vocal",
+        "missed_true_label_index": 13,
+        "wrong_predicted_label": "electric guitar",
+        "wrong_predicted_label_index": 10
+      },
+      {
+        "bert_count_across_3_seeds": 8,
+        "fusion_count_across_3_seeds": 12,
+        "fusion_minus_bert": 4,
+        "missed_true_label": "energetic",
+        "missed_true_label_index": 6,
+        "wrong_predicted_label": "fast tempo",
+        "wrong_predicted_label_index": 3
+      },
+      {
+        "bert_count_across_3_seeds": 13,
+        "fusion_count_across_3_seeds": 17,
+        "fusion_minus_bert": 4,
+        "missed_true_label": "fast tempo",
+        "missed_true_label_index": 3,
+        "wrong_predicted_label": "medium tempo",
+        "wrong_predicted_label_index": 2
+      },
+      {
+        "bert_count_across_3_seeds": 0,
+        "fusion_count_across_3_seeds": 4,
+        "fusion_minus_bert": 4,
+        "missed_true_label": "acoustic guitar",
+        "missed_true_label_index": 18,
+        "wrong_predicted_label": "medium tempo",
+        "wrong_predicted_label_index": 2
+      },
+      {
+        "bert_count_across_3_seeds": 2,
+        "fusion_count_across_3_seeds": 5,
+        "fusion_minus_bert": 3,
+        "missed_true_label": "amateur recording",
+        "missed_true_label_index": 8,
+        "wrong_predicted_label": "medium tempo",
+        "wrong_predicted_label_index": 2
+      },
+      {
+        "bert_count_across_3_seeds": 2,
+        "fusion_count_across_3_seeds": 5,
+        "fusion_minus_bert": 3,
+        "missed_true_label": "energetic",
+        "missed_true_label_index": 6,
+        "wrong_predicted_label": "groovy",
+        "wrong_predicted_label_index": 16
+      },
+      {
+        "bert_count_across_3_seeds": 5,
+        "fusion_count_across_3_seeds": 8,
+        "fusion_minus_bert": 3,
+        "missed_true_label": "amateur recording",
+        "missed_true_label_index": 8,
+        "wrong_predicted_label": "fast tempo",
+        "wrong_predicted_label_index": 3
+      },
+      {
+        "bert_count_across_3_seeds": 0,
+        "fusion_count_across_3_seeds": 3,
+        "fusion_minus_bert": 3,
+        "missed_true_label": "male vocal",
+        "missed_true_label_index": 13,
+        "wrong_predicted_label": "medium tempo",
+        "wrong_predicted_label_index": 2
+      },
+      {
+        "bert_count_across_3_seeds": 1,
+        "fusion_count_across_3_seeds": 3,
+        "fusion_minus_bert": 2,
+        "missed_true_label": "male vocal",
+        "missed_true_label_index": 13,
+        "wrong_predicted_label": "amateur recording",
+        "wrong_predicted_label_index": 8
+      },
+      {
+        "bert_count_across_3_seeds": 0,
+        "fusion_count_across_3_seeds": 2,
+        "fusion_minus_bert": 2,
+        "missed_true_label": "male vocal",
+        "missed_true_label_index": 13,
+        "wrong_predicted_label": "bass guitar",
+        "wrong_predicted_label_index": 9
+      }
+    ],
+    "top10_confusions_reduced_by_fusion": [
+      {
+        "bert_count_across_3_seeds": 9,
+        "fusion_count_across_3_seeds": 5,
+        "fusion_minus_bert": -4,
+        "missed_true_label": "instrumental",
+        "missed_true_label_index": 1,
+        "wrong_predicted_label": "energetic",
+        "wrong_predicted_label_index": 6
+      },
+      {
+        "bert_count_across_3_seeds": 23,
+        "fusion_count_across_3_seeds": 19,
+        "fusion_minus_bert": -4,
+        "missed_true_label": "medium tempo",
+        "missed_true_label_index": 2,
+        "wrong_predicted_label": "fast tempo",
+        "wrong_predicted_label_index": 3
+      },
+      {
+        "bert_count_across_3_seeds": 4,
+        "fusion_count_across_3_seeds": 0,
+        "fusion_minus_bert": -4,
+        "missed_true_label": "amateur recording",
+        "missed_true_label_index": 8,
+        "wrong_predicted_label": "live performance",
+        "wrong_predicted_label_index": 11
+      },
+      {
+        "bert_count_across_3_seeds": 8,
+        "fusion_count_across_3_seeds": 4,
+        "fusion_minus_bert": -4,
+        "missed_true_label": "medium tempo",
+        "missed_true_label_index": 2,
+        "wrong_predicted_label": "groovy",
+        "wrong_predicted_label_index": 16
+      },
+      {
+        "bert_count_across_3_seeds": 7,
+        "fusion_count_across_3_seeds": 4,
+        "fusion_minus_bert": -3,
+        "missed_true_label": "medium tempo",
+        "missed_true_label_index": 2,
+        "wrong_predicted_label": "slow tempo",
+        "wrong_predicted_label_index": 12
+      },
+      {
+        "bert_count_across_3_seeds": 6,
+        "fusion_count_across_3_seeds": 3,
+        "fusion_minus_bert": -3,
+        "missed_true_label": "live performance",
+        "missed_true_label_index": 11,
+        "wrong_predicted_label": "groovy",
+        "wrong_predicted_label_index": 16
+      },
+      {
+        "bert_count_across_3_seeds": 7,
+        "fusion_count_across_3_seeds": 4,
+        "fusion_minus_bert": -3,
+        "missed_true_label": "live performance",
+        "missed_true_label_index": 11,
+        "wrong_predicted_label": "passionate",
+        "wrong_predicted_label_index": 7
+      },
+      {
+        "bert_count_across_3_seeds": 3,
+        "fusion_count_across_3_seeds": 0,
+        "fusion_minus_bert": -3,
+        "missed_true_label": "low quality",
+        "missed_true_label_index": 0,
+        "wrong_predicted_label": "instrumental",
+        "wrong_predicted_label_index": 1
+      },
+      {
+        "bert_count_across_3_seeds": 3,
+        "fusion_count_across_3_seeds": 0,
+        "fusion_minus_bert": -3,
+        "missed_true_label": "medium tempo",
+        "missed_true_label_index": 2,
+        "wrong_predicted_label": "electric guitar",
+        "wrong_predicted_label_index": 10
+      },
+      {
+        "bert_count_across_3_seeds": 3,
+        "fusion_count_across_3_seeds": 0,
+        "fusion_minus_bert": -3,
+        "missed_true_label": "emotional",
+        "missed_true_label_index": 5,
+        "wrong_predicted_label": "male vocal",
+        "wrong_predicted_label_index": 13
+      }
+    ],
+    "top10_fusion_confusions": [
+      {
+        "bert_count_across_3_seeds": 23,
+        "fusion_count_across_3_seeds": 19,
+        "fusion_minus_bert": -4,
+        "missed_true_label": "medium tempo",
+        "missed_true_label_index": 2,
+        "wrong_predicted_label": "fast tempo",
+        "wrong_predicted_label_index": 3
+      },
+      {
+        "bert_count_across_3_seeds": 13,
+        "fusion_count_across_3_seeds": 17,
+        "fusion_minus_bert": 4,
+        "missed_true_label": "fast tempo",
+        "missed_true_label_index": 3,
+        "wrong_predicted_label": "medium tempo",
+        "wrong_predicted_label_index": 2
+      },
+      {
+        "bert_count_across_3_seeds": 13,
+        "fusion_count_across_3_seeds": 13,
+        "fusion_minus_bert": 0,
+        "missed_true_label": "slow tempo",
+        "missed_true_label_index": 12,
+        "wrong_predicted_label": "medium tempo",
+        "wrong_predicted_label_index": 2
+      },
+      {
+        "bert_count_across_3_seeds": 8,
+        "fusion_count_across_3_seeds": 12,
+        "fusion_minus_bert": 4,
+        "missed_true_label": "energetic",
+        "missed_true_label_index": 6,
+        "wrong_predicted_label": "fast tempo",
+        "wrong_predicted_label_index": 3
+      },
+      {
+        "bert_count_across_3_seeds": 7,
+        "fusion_count_across_3_seeds": 9,
+        "fusion_minus_bert": 2,
+        "missed_true_label": "live performance",
+        "missed_true_label_index": 11,
+        "wrong_predicted_label": "energetic",
+        "wrong_predicted_label_index": 6
+      },
+      {
+        "bert_count_across_3_seeds": 4,
+        "fusion_count_across_3_seeds": 9,
+        "fusion_minus_bert": 5,
+        "missed_true_label": "male vocal",
+        "missed_true_label_index": 13,
+        "wrong_predicted_label": "electric guitar",
+        "wrong_predicted_label_index": 10
+      },
+      {
+        "bert_count_across_3_seeds": 8,
+        "fusion_count_across_3_seeds": 8,
+        "fusion_minus_bert": 0,
+        "missed_true_label": "live performance",
+        "missed_true_label_index": 11,
+        "wrong_predicted_label": "emotional",
+        "wrong_predicted_label_index": 5
+      },
+      {
+        "bert_count_across_3_seeds": 7,
+        "fusion_count_across_3_seeds": 8,
+        "fusion_minus_bert": 1,
+        "missed_true_label": "fast tempo",
+        "missed_true_label_index": 3,
+        "wrong_predicted_label": "slow tempo",
+        "wrong_predicted_label_index": 12
+      },
+      {
+        "bert_count_across_3_seeds": 5,
+        "fusion_count_across_3_seeds": 8,
+        "fusion_minus_bert": 3,
+        "missed_true_label": "amateur recording",
+        "missed_true_label_index": 8,
+        "wrong_predicted_label": "fast tempo",
+        "wrong_predicted_label_index": 3
+      },
+      {
+        "bert_count_across_3_seeds": 6,
+        "fusion_count_across_3_seeds": 7,
+        "fusion_minus_bert": 1,
+        "missed_true_label": "energetic",
+        "missed_true_label_index": 6,
+        "wrong_predicted_label": "passionate",
+        "wrong_predicted_label_index": 7
+      }
+    ]
+  },
+  "final_seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "model_inference_performed": false,
+  "model_selection_performed": false,
+  "outputs": {
+    "bootstrap": "bert_vs_fusion_bootstrap.csv",
+    "case_study_candidates": "case_study_candidates.csv",
+    "confusion_pairs": "fusion_confusion_pairs.csv",
+    "per_label_deltas": "fusion_per_label_deltas.csv",
+    "seed_differences": "bert_vs_fusion_seed_differences.csv"
+  },
+  "paired_seed_analysis": {
+    "macro_ap": {
+      "mean_paired_seed_delta": 0.0005833140661313241,
+      "sample_std_paired_seed_delta": 0.002644554960793769,
+      "seed_deltas": [
+        -0.0022968395616591586,
+        0.0011446376433879024,
+        0.0029021441166652284
+      ]
+    },
+    "macro_f1": {
+      "mean_paired_seed_delta": 0.0010928136352267304,
+      "sample_std_paired_seed_delta": 0.005655257136348385,
+      "seed_deltas": [
+        -0.005282098964600412,
+        0.0030545863354118907,
+        0.005505953534868713
+      ]
+    },
+    "micro_f1": {
+      "mean_paired_seed_delta": 0.003424097692685405,
+      "sample_std_paired_seed_delta": 0.007505693834730119,
+      "seed_deltas": [
+        -0.00522996813642862,
+        0.007343947098580217,
+        0.008158314115904619
+      ]
+    }
+  },
+  "per_label_analysis": {
+    "five_lowest_support_labels": [
+      {
+        "delta_ap": -0.014980294759706636,
+        "delta_f1": 0.0,
+        "label": "no voices",
+        "test_support": 18
+      },
+      {
+        "delta_ap": 0.022210317449233852,
+        "delta_f1": 0.0355125100887812,
+        "label": "groovy",
+        "test_support": 24
+      },
+      {
+        "delta_ap": 0.02779061482774703,
+        "delta_f1": -0.02827717195533297,
+        "label": "piano",
+        "test_support": 24
+      },
+      {
+        "delta_ap": -0.021131485863764343,
+        "delta_f1": -0.03861234144116721,
+        "label": "acoustic guitar",
+        "test_support": 25
+      },
+      {
+        "delta_ap": -0.0007405468499674939,
+        "delta_f1": -0.046872616702435366,
+        "label": "mono",
+        "test_support": 26
+      }
+    ],
+    "top5_harmed_auc_pr": [
+      {
+        "delta_ap": -0.06307202599111128,
+        "label": "acoustic drums",
+        "test_support": 47
+      },
+      {
+        "delta_ap": -0.030998556655459364,
+        "label": "slow tempo",
+        "test_support": 50
+      },
+      {
+        "delta_ap": -0.026247226233159338,
+        "label": "fast tempo",
+        "test_support": 59
+      },
+      {
+        "delta_ap": -0.021131485863764343,
+        "label": "acoustic guitar",
+        "test_support": 25
+      },
+      {
+        "delta_ap": -0.014980294759706636,
+        "label": "no voices",
+        "test_support": 18
+      }
+    ],
+    "top5_harmed_f1": [
+      {
+        "delta_f1": -0.046872616702435366,
+        "label": "mono",
+        "test_support": 26
+      },
+      {
+        "delta_f1": -0.03861234144116721,
+        "label": "acoustic guitar",
+        "test_support": 25
+      },
+      {
+        "delta_f1": -0.02827717195533297,
+        "label": "piano",
+        "test_support": 24
+      },
+      {
+        "delta_f1": -0.015745978637874303,
+        "label": "medium tempo",
+        "test_support": 77
+      },
+      {
+        "delta_f1": -0.015488774887537304,
+        "label": "energetic",
+        "test_support": 61
+      }
+    ],
+    "top5_improved_auc_pr": [
+      {
+        "delta_ap": 0.046097031212075645,
+        "label": "passionate",
+        "test_support": 58
+      },
+      {
+        "delta_ap": 0.02779061482774703,
+        "label": "piano",
+        "test_support": 24
+      },
+      {
+        "delta_ap": 0.023106589525141108,
+        "label": "instrumental",
+        "test_support": 97
+      },
+      {
+        "delta_ap": 0.022210317449233852,
+        "label": "groovy",
+        "test_support": 24
+      },
+      {
+        "delta_ap": 0.0195405631085227,
+        "label": "amateur recording",
+        "test_support": 58
+      }
+    ],
+    "top5_improved_f1": [
+      {
+        "delta_f1": 0.03742705570291782,
+        "label": "acoustic drums",
+        "test_support": 47
+      },
+      {
+        "delta_f1": 0.0355125100887812,
+        "label": "groovy",
+        "test_support": 24
+      },
+      {
+        "delta_f1": 0.030548392247441547,
+        "label": "emotional",
+        "test_support": 51
+      },
+      {
+        "delta_f1": 0.026812631663596043,
+        "label": "electric guitar",
+        "test_support": 51
+      },
+      {
+        "delta_f1": 0.024584058494587224,
+        "label": "passionate",
+        "test_support": 58
+      }
+    ]
+  },
+  "point_differences_fusion_minus_bert": {
+    "macro_auc_pr": 0.0005833140661312131,
+    "macro_f1": 0.0010928136352266193,
+    "micro_f1": 0.0034240976926853683
+  },
+  "primary_comparison": "Early Fusion M3 Phase B vs BERT T1-B",
+  "source_final_evaluation_sha256": "8c6db5aed0cd23b7300da3b403089e7048f7f4ffcb64dcb8f3d1f555bd59f35d",
+  "threshold_tuning_performed": false,
+  "thresholds": {
+    "bert": 0.7,
+    "early_fusion": 0.7
+  },
+  "training_performed": false,
+  "version": 1
+}

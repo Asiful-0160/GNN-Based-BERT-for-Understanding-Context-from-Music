@@ -1,0 +1,400 @@
+{
+  "artifact_type": "final_test_evaluation",
+  "auc_pr_definition": "mean of per-label sklearn average_precision_score",
+  "b1_definition": "majority class learned independently per label from TRAIN; TRAIN prevalence used as constant threshold-free PR score",
+  "checkpoint_map": {
+    "1337": {
+      "task1": {
+        "path": "models/final_multiseed/seed1337/task1_T1B_best.pt",
+        "sha256": "2ec04d9eaa7a311820c4081b8062823a6a04fec766a334062b0ee54a8be858ed"
+      },
+      "task2": {
+        "path": "models/final_multiseed/seed1337/task2_A1_CNN_best.pt",
+        "sha256": "4a12fcf66fe127fcd9f19bea4118a399a12d079ec131dde3a84127e445fd195b"
+      },
+      "task3": {
+        "path": "models/final_multiseed/seed1337/task3_M3_phaseB_best.pt",
+        "sha256": "e6eeaffc9e8f6a50cc35d5bc845aea89cbeffbf2a7c1eacde0a6499e7cbf9457"
+      }
+    },
+    "2026": {
+      "task1": {
+        "path": "models/final_multiseed/seed2026/task1_T1B_best.pt",
+        "sha256": "c0943a0cd157d6f309c75739a01a54dbe69af16fdd9b3a76c2e0998121b268b0"
+      },
+      "task2": {
+        "path": "models/final_multiseed/seed2026/task2_A1_CNN_best.pt",
+        "sha256": "9f5d01aa7a4e31ffcdd976a90e26da5cfcd5b3d21d2eb85c3dddbd2699593aba"
+      },
+      "task3": {
+        "path": "models/final_multiseed/seed2026/task3_M3_phaseB_best.pt",
+        "sha256": "18a3015ad96ecd460a02df49de1f12ec22bc1da4f1534200be56489a01394db0"
+      }
+    },
+    "42": {
+      "task1": {
+        "path": "models/final_multiseed/seed42/task1_T1B_best.pt",
+        "sha256": "18019760f423b79111fb8daf4d45cd2c9e4bf085276e038a5bfc2e1c8b23cba3"
+      },
+      "task2": {
+        "path": "models/final_multiseed/seed42/task2_A1_CNN_best.pt",
+        "sha256": "c102ee6f94f462a7c5ee02d605201fa5c8eeeee4786d934de00dc11f68716d7e"
+      },
+      "task3": {
+        "path": "models/final_multiseed/seed42/task3_M3_phaseB_best.pt",
+        "sha256": "4f80f502b3b085a1470cbb6ca5420106b750d5639a6a539754de31a2e383ad47"
+      }
+    }
+  },
+  "comparison_table": [
+    {
+      "auc_pr_mean": 0.10330739299610894,
+      "auc_pr_sample_std": null,
+      "macro_f1_mean": 0.0,
+      "macro_f1_sample_std": null,
+      "micro_f1_mean": 0.0,
+      "micro_f1_sample_std": null,
+      "modality": "—",
+      "model": "B1 Majority-class",
+      "n_runs": 1
+    },
+    {
+      "auc_pr_mean": 0.22324413503572238,
+      "auc_pr_sample_std": 0.006002360851572797,
+      "macro_f1_mean": 0.2784037730949435,
+      "macro_f1_sample_std": 0.004877985905403442,
+      "micro_f1_mean": 0.2917607929134806,
+      "micro_f1_sample_std": 0.007910517414462376,
+      "modality": "Audio",
+      "model": "B2 CNN",
+      "n_runs": 3
+    },
+    {
+      "auc_pr_mean": 0.8313331762077474,
+      "auc_pr_sample_std": 0.004352773006366695,
+      "macro_f1_mean": 0.7808942218389365,
+      "macro_f1_sample_std": 0.009658501059670957,
+      "micro_f1_mean": 0.7807905963419821,
+      "micro_f1_sample_std": 0.01079046012728057,
+      "modality": "Text",
+      "model": "BERT",
+      "n_runs": 3
+    },
+    {
+      "auc_pr_mean": 0.19439308969825905,
+      "auc_pr_sample_std": null,
+      "macro_f1_mean": 0.24164746055439917,
+      "macro_f1_sample_std": null,
+      "micro_f1_mean": 0.2682264466262795,
+      "micro_f1_sample_std": null,
+      "modality": "Audio Graph",
+      "model": "GraphSAGE",
+      "n_runs": 1
+    },
+    {
+      "auc_pr_mean": 0.18767502735792058,
+      "auc_pr_sample_std": null,
+      "macro_f1_mean": 0.2498376730101338,
+      "macro_f1_sample_std": null,
+      "micro_f1_mean": 0.2722183344996501,
+      "micro_f1_sample_std": null,
+      "modality": "Audio Graph",
+      "model": "GAT",
+      "n_runs": 1
+    },
+    {
+      "auc_pr_mean": 0.8319164902738786,
+      "auc_pr_sample_std": 0.002047063811053162,
+      "macro_f1_mean": 0.7819870354741632,
+      "macro_f1_sample_std": 0.00453706165219684,
+      "micro_f1_mean": 0.7842146940346675,
+      "micro_f1_sample_std": 0.004101212696000231,
+      "modality": "Audio+Text",
+      "model": "Early Fusion",
+      "n_runs": 3
+    },
+    {
+      "auc_pr_mean": 0.8269702992867469,
+      "auc_pr_sample_std": null,
+      "macro_f1_mean": 0.7835130968286774,
+      "macro_f1_sample_std": null,
+      "micro_f1_mean": 0.7841255996511121,
+      "micro_f1_sample_std": null,
+      "modality": "Audio+Text",
+      "model": "Cross-Attention",
+      "n_runs": 1
+    }
+  ],
+  "dependencies": {
+    "audio_manifest_sha256": "e0479ac47a6d41ca633d6a47bbee16962607cf5a1749cca2e56b349c310aaa49",
+    "final_threshold_lock_sha256": "20118489eba0b5ee9d0568bfa1d76eb4c4a6a829c50042b83d738b31526b26e9",
+    "graph_manifest_sha256": "f092b7ca5f409f3e4fd34c6e3b0bce6ad0492bf90eccc929cadc1aad1da9e158",
+    "multiseed_manifest_sha256": "ca4955591cb85957d628ac1c7cbcfd5595ad16010fece7362cf79dec8b524446",
+    "targets_sha256": "a6f80bb42b0b48b2c47dac5f27ad2fd66f8893d83bd5d4e552d356cee3547056",
+    "token_cache_sha256": "0df45ab266884abbc2f3f7f96a5ba789bbf92bf8da49ac4cb57a1e4eb476188f",
+    "token_manifest_sha256": "4be874ab26375ce63bb0f4b55706d178bfac8a951fee96fd75d2d49b28a390b8"
+  },
+  "final_seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "frozen_thresholds": {
+    "BERT_T1B": 0.7,
+    "CNN_A1": 0.5,
+    "CrossAttention_M4B": 0.7,
+    "EarlyFusion_M3B": 0.7,
+    "GAT_A4_G2": 0.45,
+    "GraphSAGE_A3_G2": 0.5
+  },
+  "labels": [
+    "low quality",
+    "instrumental",
+    "medium tempo",
+    "fast tempo",
+    "noisy",
+    "emotional",
+    "energetic",
+    "passionate",
+    "amateur recording",
+    "bass guitar",
+    "electric guitar",
+    "live performance",
+    "slow tempo",
+    "male vocal",
+    "mono",
+    "acoustic drums",
+    "groovy",
+    "no voices",
+    "acoustic guitar",
+    "piano"
+  ],
+  "model_selection_after_test_access": false,
+  "multiseed_standard_deviation": "sample standard deviation across seeds; ddof=1",
+  "next_stage": "post-hoc analysis using frozen saved TEST outputs; no retuning",
+  "numerical_modes": {
+    "BERT_T1B": "FP16_autocast",
+    "CNN_A1": "FP32",
+    "CrossAttention_M4B": "FP32",
+    "EarlyFusion_M3B": "FP32",
+    "GAT_A4_G2": "FP32",
+    "GraphSAGE_A3_G2": "FP32"
+  },
+  "output_hashes": {
+    "final_comparison_table.csv": "5774376f15e403b63f94da5e40c56af8a383a9fbab0c5b81005a1d4047692da2",
+    "final_comparison_table_display.csv": "c3fe4e457536df1f123d77c737a8dbfbc0274648ddfeb17a180d0624c0d551e8",
+    "final_test_metrics_per_run.csv": "d24bdccd14039f3d6f109646cc6c0fc117e5da9f12c4f34e0b40dd00ea4dc848",
+    "final_test_per_label_per_run.csv": "11e7bacb625c9405bce078e5cbffccf2d2e45a0dab459d7582756ca3ba3a26b3",
+    "final_test_per_label_summary.csv": "b5e7936084044812540f76b16afcb55138ce0e2638ccdab660f961de37d13899",
+    "final_test_predictions.npz": "103e329fc8784e2a916037988054bcee0a7089a0922627ef2cf6fa5225610a9b"
+  },
+  "per_run_metrics": [
+    {
+      "auc_pr_macro_mean_ap": 0.10330739299610894,
+      "checkpoint_sha256": null,
+      "macro_f1": 0.0,
+      "micro_average_precision": 0.1651208132048359,
+      "micro_f1": 0.0,
+      "modality": "—",
+      "model": "B1 Majority-class",
+      "model_key": "B1_Majority",
+      "numerical_mode": "majority learned per label from TRAIN; TRAIN prevalence used as constant PR score",
+      "seed": null,
+      "threshold": null
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8363592700435059,
+      "checkpoint_sha256": "18019760f423b79111fb8daf4d45cd2c9e4bf085276e038a5bfc2e1c8b23cba3",
+      "macro_f1": 0.7920184424086798,
+      "micro_average_precision": 0.851862861829743,
+      "micro_f1": 0.7929515418502202,
+      "modality": "Text",
+      "model": "BERT",
+      "model_key": "BERT_T1B",
+      "numerical_mode": "FP16_autocast",
+      "seed": 42,
+      "threshold": 0.7
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8288405843764487,
+      "checkpoint_sha256": "2ec04d9eaa7a311820c4081b8062823a6a04fec766a334062b0ee54a8be858ed",
+      "macro_f1": 0.774642597046285,
+      "micro_average_precision": 0.8412765002436353,
+      "micro_f1": 0.7723611699872828,
+      "modality": "Text",
+      "model": "BERT",
+      "model_key": "BERT_T1B",
+      "numerical_mode": "FP16_autocast",
+      "seed": 1337,
+      "threshold": 0.7
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8287996742032874,
+      "checkpoint_sha256": "c0943a0cd157d6f309c75739a01a54dbe69af16fdd9b3a76c2e0998121b268b0",
+      "macro_f1": 0.7760216260618444,
+      "micro_average_precision": 0.8422152844290846,
+      "micro_f1": 0.7770590771884432,
+      "modality": "Text",
+      "model": "BERT",
+      "model_key": "BERT_T1B",
+      "numerical_mode": "FP16_autocast",
+      "seed": 2026,
+      "threshold": 0.7
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.22186313458666565,
+      "checkpoint_sha256": "c102ee6f94f462a7c5ee02d605201fa5c8eeeee4786d934de00dc11f68716d7e",
+      "macro_f1": 0.2773703181453539,
+      "micro_average_precision": 0.2054426022961026,
+      "micro_f1": 0.2912621359223301,
+      "modality": "Audio",
+      "model": "B2 CNN",
+      "model_key": "CNN_A1",
+      "numerical_mode": "FP32",
+      "seed": 42,
+      "threshold": 0.5
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.218052631850504,
+      "checkpoint_sha256": "4a12fcf66fe127fcd9f19bea4118a399a12d079ec131dde3a84127e445fd195b",
+      "macro_f1": 0.27412532334218026,
+      "micro_average_precision": 0.19408931866138354,
+      "micro_f1": 0.2841114005209377,
+      "modality": "Audio",
+      "model": "B2 CNN",
+      "model_key": "CNN_A1",
+      "numerical_mode": "FP32",
+      "seed": 1337,
+      "threshold": 0.5
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.22981663866999752,
+      "checkpoint_sha256": "9f5d01aa7a4e31ffcdd976a90e26da5cfcd5b3d21d2eb85c3dddbd2699593aba",
+      "macro_f1": 0.28371567779729634,
+      "micro_average_precision": 0.2150702218408687,
+      "micro_f1": 0.2999088422971741,
+      "modality": "Audio",
+      "model": "B2 CNN",
+      "model_key": "CNN_A1",
+      "numerical_mode": "FP32",
+      "seed": 2026,
+      "threshold": 0.5
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.19439308969825905,
+      "checkpoint_sha256": "abac9ffed7907177b215332d9758e4cb86482f856b5492f2d73352412d84d8ea",
+      "macro_f1": 0.24164746055439917,
+      "micro_average_precision": 0.1854125684753695,
+      "micro_f1": 0.2682264466262795,
+      "modality": "Audio Graph",
+      "model": "GraphSAGE",
+      "model_key": "GraphSAGE_A3_G2",
+      "numerical_mode": "FP32",
+      "seed": 42,
+      "threshold": 0.5
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.18767502735792058,
+      "checkpoint_sha256": "c4e3084f6f7f6030caf157623663d311daf74ea0a24f6b02e78e5513078fae1e",
+      "macro_f1": 0.2498376730101338,
+      "micro_average_precision": 0.1890849990239457,
+      "micro_f1": 0.2722183344996501,
+      "modality": "Audio Graph",
+      "model": "GAT",
+      "model_key": "GAT_A4_G2",
+      "numerical_mode": "FP32",
+      "seed": 42,
+      "threshold": 0.45
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8340624304818467,
+      "checkpoint_sha256": "4f80f502b3b085a1470cbb6ca5420106b750d5639a6a539754de31a2e383ad47",
+      "macro_f1": 0.7867363434440794,
+      "micro_average_precision": 0.8522649618036153,
+      "micro_f1": 0.7877215737137916,
+      "modality": "Audio+Text",
+      "model": "Early Fusion",
+      "model_key": "EarlyFusion_M3B",
+      "numerical_mode": "FP32",
+      "seed": 42,
+      "threshold": 0.7
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8299852220198366,
+      "checkpoint_sha256": "e6eeaffc9e8f6a50cc35d5bc845aea89cbeffbf2a7c1eacde0a6499e7cbf9457",
+      "macro_f1": 0.7776971833816969,
+      "micro_average_precision": 0.8525523541823556,
+      "micro_f1": 0.779705117085863,
+      "modality": "Audio+Text",
+      "model": "Early Fusion",
+      "model_key": "EarlyFusion_M3B",
+      "numerical_mode": "FP32",
+      "seed": 1337,
+      "threshold": 0.7
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8317018183199526,
+      "checkpoint_sha256": "18a3015ad96ecd460a02df49de1f12ec22bc1da4f1534200be56489a01394db0",
+      "macro_f1": 0.7815275795967132,
+      "micro_average_precision": 0.8522809747987717,
+      "micro_f1": 0.7852173913043479,
+      "modality": "Audio+Text",
+      "model": "Early Fusion",
+      "model_key": "EarlyFusion_M3B",
+      "numerical_mode": "FP32",
+      "seed": 2026,
+      "threshold": 0.7
+    },
+    {
+      "auc_pr_macro_mean_ap": 0.8269702992867469,
+      "checkpoint_sha256": "7a27a270074ef4e50143aec94b8b5d7ada001de0c0708c18b3aea406d159c165",
+      "macro_f1": 0.7835130968286774,
+      "micro_average_precision": 0.853037401345068,
+      "micro_f1": 0.7841255996511121,
+      "modality": "Audio+Text",
+      "model": "Cross-Attention",
+      "model_key": "CrossAttention_M4B",
+      "numerical_mode": "FP32",
+      "seed": 42,
+      "threshold": 0.7
+    }
+  ],
+  "research_comparison": {
+    "bert_mean_auc_pr": 0.8313331762077474,
+    "cnn_mean_auc_pr": 0.22324413503572238,
+    "early_fusion_mean_auc_pr": 0.8319164902738786,
+    "early_fusion_minus_bert_auc_pr": 0.0005833140661312131,
+    "early_fusion_minus_cnn_auc_pr": 0.6086723552381562,
+    "early_fusion_minus_gat_auc_pr": 0.6442414629159581,
+    "gat_seed42_auc_pr": 0.18767502735792058
+  },
+  "test_access_policy": "first target-dependent TEST evaluation; frozen thresholds applied without retuning",
+  "test_evaluation_status": "FINAL",
+  "test_examples": 514,
+  "test_probability_cache_saved": true,
+  "test_support": [
+    134,
+    97,
+    77,
+    59,
+    50,
+    51,
+    61,
+    58,
+    58,
+    57,
+    51,
+    47,
+    50,
+    48,
+    26,
+    47,
+    24,
+    18,
+    25,
+    24
+  ],
+  "threshold_tuning_on_test": false,
+  "training_after_test_access": false,
+  "version": 1
+}

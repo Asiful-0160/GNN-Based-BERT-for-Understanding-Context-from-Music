@@ -1,0 +1,480 @@
+{
+  "files_read": 44,
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 9543,
+      "sha256": "f270befae5b528ed7d872e30acd685a10906e677cea8dc16ef1a2df98c4e4dc5"
+    },
+    {
+      "path": "final_t4\\task4_final_artifact_lock.json",
+      "bytes": 8344,
+      "sha256": "9dc845fd95324e6fef98173c849975c07f8eea9c998052f497df022c4fbd3bf0"
+    },
+    {
+      "path": "final_t4\\task4_final_audit.json",
+      "bytes": 19414,
+      "sha256": "712bb131762a9791550db2a4b98aa271824c9c878f54d9ef7fe4917c846a3413"
+    },
+    {
+      "path": "final_t4\\task4_final_summary.json",
+      "bytes": 5059,
+      "sha256": "2e625cd0ed519d93f4f60486be22205209b43bd3ecb34a7d4a77c750388f0498"
+    },
+    {
+      "path": "final_test\\final_comparison_table.csv",
+      "bytes": 841,
+      "sha256": "5774376f15e403b63f94da5e40c56af8a383a9fbab0c5b81005a1d4047692da2"
+    },
+    {
+      "path": "final_test\\final_comparison_table_display.csv",
+      "bytes": 490,
+      "sha256": "c3fe4e457536df1f123d77c737a8dbfbc0274648ddfeb17a180d0624c0d551e8"
+    },
+    {
+      "path": "final_test\\final_test_evaluation.json",
+      "bytes": 13556,
+      "sha256": "8c6db5aed0cd23b7300da3b403089e7048f7f4ffcb64dcb8f3d1f555bd59f35d"
+    },
+    {
+      "path": "final_test\\final_test_metrics_per_run.csv",
+      "bytes": 2552,
+      "sha256": "d24bdccd14039f3d6f109646cc6c0fc117e5da9f12c4f34e0b40dd00ea4dc848"
+    },
+    {
+      "path": "final_test\\final_test_per_label_per_run.csv",
+      "bytes": 20921,
+      "sha256": "11e7bacb625c9405bce078e5cbffccf2d2e45a0dab459d7582756ca3ba3a26b3"
+    },
+    {
+      "path": "final_test\\final_test_per_label_summary.csv",
+      "bytes": 11898,
+      "sha256": "b5e7936084044812540f76b16afcb55138ce0e2638ccdab660f961de37d13899"
+    },
+    {
+      "path": "final_test\\final_test_predictions.npz",
+      "bytes": 436867,
+      "sha256": "103e329fc8784e2a916037988054bcee0a7089a0922627ef2cf6fa5225610a9b"
+    },
+    {
+      "path": "final_test\\TEST_ACCESS_STARTED.txt",
+      "bytes": 135,
+      "sha256": "83aa8e69c6ff0ec62be268558f47ada302e9e879bc5c3ef847094632f793818c"
+    },
+    {
+      "path": "report_assets\\case_study_label_details.csv",
+      "bytes": 7835,
+      "sha256": "315ec8dc9d9e30e69514410a8f561b7cc4fe768b72fccd39b7aa61293916b31f"
+    },
+    {
+      "path": "report_assets\\case_study_summary.csv",
+      "bytes": 453,
+      "sha256": "24e8ecb99728331abe31c72b3accfd0325fd618dd0f8336bb183ca377143cea8"
+    },
+    {
+      "path": "report_assets\\figure_final_auc_pr.png",
+      "bytes": 82663,
+      "sha256": "d1925d84cac2f06e0ff31118b0bf37c715ba41152da529590d8c4338e3b2d13b"
+    },
+    {
+      "path": "report_assets\\figure_final_macro_f1.png",
+      "bytes": 79987,
+      "sha256": "c1c4a9390dbc67641e17e9e8ed5f3a86455f3f158043fc31af4f4edeb6cdb649"
+    },
+    {
+      "path": "report_assets\\figure_final_micro_f1.png",
+      "bytes": 78526,
+      "sha256": "58cbc4d4ed55e4a35422da057e1710b83b0a7697cde990c02d5a5ce4b4491d04"
+    },
+    {
+      "path": "report_assets\\figure_fusion_confusion_pairs.png",
+      "bytes": 125255,
+      "sha256": "86c3f0fa5984b1268cf1f8c397a40ac86561f1d294213aa366b1d8ef71c297cd"
+    },
+    {
+      "path": "report_assets\\figure_fusion_per_label_aucpr_delta.png",
+      "bytes": 121055,
+      "sha256": "8986a86b88c950698b39de4c94db1bf5b156a52ee0cfd6624374b2e89c154db1"
+    },
+    {
+      "path": "report_assets\\figure_G2_hard_case_graph.png",
+      "bytes": 147849,
+      "sha256": "7118c18d8bb1685df7b7fe648ed3c0577c48d0df4b130a7e32c9585005eb0b89"
+    },
+    {
+      "path": "report_assets\\figure_training_A1_CNN.png",
+      "bytes": 178058,
+      "sha256": "fac4f0566c7b50f1495821a55a12e30df41fbfff4dfa47d8e4e9b97d0e786230"
+    },
+    {
+      "path": "report_assets\\figure_training_M3_phaseA.png",
+      "bytes": 179877,
+      "sha256": "5f85b3bc7fb305b729a183292e12ad9fbe7719c2b02004584136acbe1ec7c986"
+    },
+    {
+      "path": "report_assets\\figure_training_M3_phaseB.png",
+      "bytes": 159011,
+      "sha256": "4a57469f08a62b3232347e9ab8ffa5c991ae84910ab83592af349411d8c2d47f"
+    },
+    {
+      "path": "report_assets\\figure_training_T1B.png",
+      "bytes": 116234,
+      "sha256": "e2512ab212af61739d64c8ee43af6ff22c3c7bcf11d67f542d42881fde4e5923"
+    },
+    {
+      "path": "report_assets\\g2_case_graph_edges.csv",
+      "bytes": 258,
+      "sha256": "406f36f3d443847de3ace80c59271f62f34613ef67c93cb15a80ef6e09391ed9"
+    },
+    {
+      "path": "report_assets\\g2_case_graph_summary.json",
+      "bytes": 263,
+      "sha256": "9812196bfd29cee5051ea0469f9cfe6a60da28d10476148bff9d45912370a286"
+    },
+    {
+      "path": "report_assets\\paper_ready_findings.txt",
+      "bytes": 1454,
+      "sha256": "4b4818b4b0646d54a09167df46f21863bf3a47097777af65bf372e4df50771f7"
+    },
+    {
+      "path": "report_assets\\report_assets_manifest.json",
+      "bytes": 3370,
+      "sha256": "dcd4701c1a0d66660a55892f749378ece76fd45efa7be7c4e244efd7ef8a52c8"
+    },
+    {
+      "path": "final_t4\\figures\\task4_human_ratings.png",
+      "bytes": 42919,
+      "sha256": "879286146ab52d9c369ee278b1b17393c33c778cd985baa4071dc54785147d9e"
+    },
+    {
+      "path": "final_t4\\figures\\task4_test_recall_at_k.png",
+      "bytes": 55620,
+      "sha256": "120a0566fae6374344850e508fbb24d79bde236a34efe0e19e35c5f3c6194f79"
+    },
+    {
+      "path": "final_t4\\figures\\task4_val_vs_test_mR.png",
+      "bytes": 38271,
+      "sha256": "c48305370759382160f3057fd68091404e8a652688f411098e718fe86f95d749"
+    },
+    {
+      "path": "final_t4\\figures\\task4_zero_shot_macro_ap.png",
+      "bytes": 42359,
+      "sha256": "4c6f26de899afe4dc3c17a31da41988de3a4f1b20ecd202ab955a58c09b3ec36"
+    },
+    {
+      "path": "final_t4\\tables\\task3_supervised_vs_task4_zeroshot.csv",
+      "bytes": 183,
+      "sha256": "b076ba89725ea30cef067ee7027933b0c950208973ba22f48330e9cf7c6a9935"
+    },
+    {
+      "path": "final_t4\\tables\\task4_human_eval_final.csv",
+      "bytes": 432,
+      "sha256": "c68ff4397ff3fb667aec0cae3bdef15b9f7903b65416b656c22fc239cf301a77"
+    },
+    {
+      "path": "final_t4\\tables\\task4_key_results.csv",
+      "bytes": 468,
+      "sha256": "f20ca58bad1bf2362448a7fe79b71bfd790a6e0b1bb33e233dadf0067c8f6733"
+    },
+    {
+      "path": "final_t4\\tables\\task4_retrieval_final.csv",
+      "bytes": 986,
+      "sha256": "0e530adf99dc18a8397eaa6f0e167d366d4f174128786cfe5341bea4e50795a4"
+    },
+    {
+      "path": "final_t4\\tables\\task4_zero_shot_final.csv",
+      "bytes": 693,
+      "sha256": "9fbc2065130f5c8700b87ade7c1246fa80e8ff429da0722ceb519db9676b3db9"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\bert_vs_fusion_bootstrap.csv",
+      "bytes": 139574,
+      "sha256": "a58bd07d3f5b7a2a0138f1db4d2f62976c746b16c4afa899e2b3497970e41c8b"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\bert_vs_fusion_seed_differences.csv",
+      "bytes": 688,
+      "sha256": "ded193a8805074a1fa36ea94a7f9e427a096d8bd4d67bea661b421df89b298e3"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\case_study_candidates.csv",
+      "bytes": 737,
+      "sha256": "d214180dcb818267e0e7b823a5f5359d90384d1306726377ce5825690a2db1c3"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\fusion_confusion_pairs.csv",
+      "bytes": 13154,
+      "sha256": "6e8bc033927ab5497d31e2f3c02537eb0a06337733f3d2ab7bda475fd10ad7ca"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\fusion_per_label_deltas.csv",
+      "bytes": 2790,
+      "sha256": "d6a91b4195702d4a089887a19339529af85d9b259971f6005d5df9d63bc0dac0"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\output_hashes.json",
+      "bytes": 609,
+      "sha256": "a22206ad82249f2a63214fa2ec6216dc72a05b7caa470184d9388a024b0617f1"
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\posthoc_analysis.json",
+      "bytes": 15951,
+      "sha256": "f2b114634c5002ace1df164e0f475c079c604c81f0f5014dd7bf1a196e93fdae"
+    }
+  ],
+  "hash_checks": [
+    {
+      "path": "report_assets\\case_study_label_details.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\case_study_summary.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_G2_hard_case_graph.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_final_auc_pr.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_final_macro_f1.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_final_micro_f1.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_fusion_confusion_pairs.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_fusion_per_label_aucpr_delta.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_training_A1_CNN.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_training_M3_phaseA.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_training_M3_phaseB.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\figure_training_T1B.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\g2_case_graph_edges.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\g2_case_graph_summary.json",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report_assets\\paper_ready_findings.txt",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\final_comparison_table.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\final_comparison_table_display.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\final_test_metrics_per_run.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\final_test_per_label_per_run.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\final_test_per_label_summary.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\final_test_predictions.npz",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\bert_vs_fusion_bootstrap.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\bert_vs_fusion_seed_differences.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\case_study_candidates.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\fusion_confusion_pairs.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\fusion_per_label_deltas.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_test\\posthoc_analysis\\posthoc_analysis.json",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_human_ratings.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_test_recall_at_k.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_val_vs_test_mR.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_zero_shot_macro_ap.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_human_eval_final.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_key_results.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_retrieval_final.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task3_supervised_vs_task4_zeroshot.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_zero_shot_final.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\task4_final_audit.json",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_human_ratings.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_test_recall_at_k.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_val_vs_test_mR.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\figures\\task4_zero_shot_macro_ap.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\task4_final_summary.json",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_human_eval_final.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_key_results.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_retrieval_final.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task3_supervised_vs_task4_zeroshot.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "final_t4\\tables\\task4_zero_shot_final.csv",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_final_auc_pr.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_final_macro_f1.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_final_micro_f1.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_fusion_confusion_pairs.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_fusion_per_label_aucpr_delta.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_G2_hard_case_graph.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_training_A1_CNN.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_training_M3_phaseA.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_training_M3_phaseB.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/figure_training_T1B.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/task4_human_ratings.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/task4_test_recall_at_k.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/task4_val_vs_test_mR.png",
+      "matches_recorded_hash": true
+    },
+    {
+      "path": "report/figures/task4_zero_shot_macro_ap.png",
+      "matches_recorded_hash": true
+    }
+  ],
+  "hash_mismatches": [],
+  "undefined_source_references": [],
+  "missing_figure_assets": [
+    "fig_tsne_task3.png",
+    "fig_task4_qualitative_top3.png"
+  ],
+  "undefined_citations": [],
+  "unused_float_labels": [],
+  "scope": "Local export only. No training, inference, metric recalculation, or upstream checkpoint verification."
+}

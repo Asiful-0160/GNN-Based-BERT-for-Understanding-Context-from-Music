@@ -1,0 +1,92 @@
+[
+  {
+    "item_id": "Q01",
+    "file": "audio/Q01.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "ece8062121b271817ef29d5796197f9325ef2233e97f727b6fb63a0ead7f29ba"
+  },
+  {
+    "item_id": "Q02",
+    "file": "audio/Q02.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "66cf9bc113c101e04fc3ce48203b9aba419a95e020a163826a93051270b313e6"
+  },
+  {
+    "item_id": "Q03",
+    "file": "audio/Q03.wav",
+    "duration_seconds": 10.00780045351474,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "ef300ca37b22b4d22f9c7435f863f4ecc20a57488b1078fa24452724210b97d0"
+  },
+  {
+    "item_id": "Q04",
+    "file": "audio/Q04.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "8300a85e428b415547a203f3fc0585ca0d9dfd1742076dd23ee8a87d413c82a3"
+  },
+  {
+    "item_id": "Q05",
+    "file": "audio/Q05.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "fd8231d4ea26a324c2fcef17efd8d46bb0cd7a141f16f3be487a64a3e6b66ff6"
+  },
+  {
+    "item_id": "Q06",
+    "file": "audio/Q06.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "8dc49736ec159813fb6084c180b84465c84ac8393c70cf5e09b80fd48841dda2"
+  },
+  {
+    "item_id": "Q07",
+    "file": "audio/Q07.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "d39ba1e6e9ab0e39ff9caa1a19e4938f1a933db38e6b2a6f7e17b97d005c8f91"
+  },
+  {
+    "item_id": "Q08",
+    "file": "audio/Q08.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "6f20d8437b578beab78f266204c1129e4e76ce1ed0f0f0374972a637839c411e"
+  },
+  {
+    "item_id": "Q09",
+    "file": "audio/Q09.wav",
+    "duration_seconds": 10.00780045351474,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "a5664ef04533b0112a7515fd77f7e5a0adc345dac32b482e1e650f12d9864140"
+  },
+  {
+    "item_id": "Q10",
+    "file": "audio/Q10.wav",
+    "duration_seconds": 10.0,
+    "sample_rate": 22050,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sha256": "9fa90b79924fba4a39ba9a3a49e9adbd9c62a8ff822818981aa2f084afa6bd6f"
+  }
+]

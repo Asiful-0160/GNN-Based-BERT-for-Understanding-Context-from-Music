@@ -1,0 +1,381 @@
+missed_true_label_index,missed_true_label,wrong_predicted_label_index,wrong_predicted_label,bert_count_across_3_seeds,fusion_count_across_3_seeds,fusion_minus_bert
+0,low quality,1,instrumental,3,0,-3
+0,low quality,2,medium tempo,3,2,-1
+0,low quality,3,fast tempo,0,2,2
+0,low quality,4,noisy,0,0,0
+0,low quality,5,emotional,1,0,-1
+0,low quality,6,energetic,0,0,0
+0,low quality,7,passionate,2,0,-2
+0,low quality,8,amateur recording,2,2,0
+0,low quality,9,bass guitar,0,0,0
+0,low quality,10,electric guitar,2,0,-2
+0,low quality,11,live performance,1,0,-1
+0,low quality,12,slow tempo,2,1,-1
+0,low quality,13,male vocal,0,0,0
+0,low quality,14,mono,0,0,0
+0,low quality,15,acoustic drums,0,0,0
+0,low quality,16,groovy,0,0,0
+0,low quality,17,no voices,0,0,0
+0,low quality,18,acoustic guitar,0,0,0
+0,low quality,19,piano,0,0,0
+1,instrumental,0,low quality,3,3,0
+1,instrumental,2,medium tempo,0,0,0
+1,instrumental,3,fast tempo,2,0,-2
+1,instrumental,4,noisy,0,0,0
+1,instrumental,5,emotional,1,0,-1
+1,instrumental,6,energetic,9,5,-4
+1,instrumental,7,passionate,2,1,-1
+1,instrumental,8,amateur recording,0,0,0
+1,instrumental,9,bass guitar,1,0,-1
+1,instrumental,10,electric guitar,0,0,0
+1,instrumental,11,live performance,1,0,-1
+1,instrumental,12,slow tempo,1,3,2
+1,instrumental,13,male vocal,0,0,0
+1,instrumental,14,mono,0,0,0
+1,instrumental,15,acoustic drums,0,0,0
+1,instrumental,16,groovy,0,0,0
+1,instrumental,17,no voices,0,0,0
+1,instrumental,18,acoustic guitar,1,0,-1
+1,instrumental,19,piano,0,0,0
+2,medium tempo,0,low quality,0,0,0
+2,medium tempo,1,instrumental,0,0,0
+2,medium tempo,3,fast tempo,23,19,-4
+2,medium tempo,4,noisy,0,0,0
+2,medium tempo,5,emotional,3,3,0
+2,medium tempo,6,energetic,6,6,0
+2,medium tempo,7,passionate,1,1,0
+2,medium tempo,8,amateur recording,4,3,-1
+2,medium tempo,9,bass guitar,1,2,1
+2,medium tempo,10,electric guitar,3,0,-3
+2,medium tempo,11,live performance,2,0,-2
+2,medium tempo,12,slow tempo,7,4,-3
+2,medium tempo,13,male vocal,0,0,0
+2,medium tempo,14,mono,0,0,0
+2,medium tempo,15,acoustic drums,3,2,-1
+2,medium tempo,16,groovy,8,4,-4
+2,medium tempo,17,no voices,0,0,0
+2,medium tempo,18,acoustic guitar,7,6,-1
+2,medium tempo,19,piano,5,4,-1
+3,fast tempo,0,low quality,2,3,1
+3,fast tempo,1,instrumental,1,0,-1
+3,fast tempo,2,medium tempo,13,17,4
+3,fast tempo,4,noisy,0,0,0
+3,fast tempo,5,emotional,0,0,0
+3,fast tempo,6,energetic,3,3,0
+3,fast tempo,7,passionate,0,0,0
+3,fast tempo,8,amateur recording,3,3,0
+3,fast tempo,9,bass guitar,1,0,-1
+3,fast tempo,10,electric guitar,1,1,0
+3,fast tempo,11,live performance,0,0,0
+3,fast tempo,12,slow tempo,7,8,1
+3,fast tempo,13,male vocal,2,3,1
+3,fast tempo,14,mono,0,0,0
+3,fast tempo,15,acoustic drums,1,2,1
+3,fast tempo,16,groovy,0,0,0
+3,fast tempo,17,no voices,0,0,0
+3,fast tempo,18,acoustic guitar,0,1,1
+3,fast tempo,19,piano,0,1,1
+4,noisy,0,low quality,2,3,1
+4,noisy,1,instrumental,0,0,0
+4,noisy,2,medium tempo,0,0,0
+4,noisy,3,fast tempo,0,0,0
+4,noisy,5,emotional,0,0,0
+4,noisy,6,energetic,3,3,0
+4,noisy,7,passionate,0,0,0
+4,noisy,8,amateur recording,0,0,0
+4,noisy,9,bass guitar,0,0,0
+4,noisy,10,electric guitar,0,0,0
+4,noisy,11,live performance,0,0,0
+4,noisy,12,slow tempo,0,0,0
+4,noisy,13,male vocal,0,0,0
+4,noisy,14,mono,0,0,0
+4,noisy,15,acoustic drums,0,0,0
+4,noisy,16,groovy,0,0,0
+4,noisy,17,no voices,0,0,0
+4,noisy,18,acoustic guitar,0,0,0
+4,noisy,19,piano,0,0,0
+5,emotional,0,low quality,1,3,2
+5,emotional,1,instrumental,1,3,2
+5,emotional,2,medium tempo,0,0,0
+5,emotional,3,fast tempo,2,3,1
+5,emotional,4,noisy,0,0,0
+5,emotional,6,energetic,0,0,0
+5,emotional,7,passionate,3,3,0
+5,emotional,8,amateur recording,3,3,0
+5,emotional,9,bass guitar,0,0,0
+5,emotional,10,electric guitar,0,0,0
+5,emotional,11,live performance,4,3,-1
+5,emotional,12,slow tempo,1,1,0
+5,emotional,13,male vocal,3,0,-3
+5,emotional,14,mono,0,0,0
+5,emotional,15,acoustic drums,0,0,0
+5,emotional,16,groovy,3,3,0
+5,emotional,17,no voices,0,0,0
+5,emotional,18,acoustic guitar,0,0,0
+5,emotional,19,piano,0,0,0
+6,energetic,0,low quality,2,0,-2
+6,energetic,1,instrumental,0,0,0
+6,energetic,2,medium tempo,3,3,0
+6,energetic,3,fast tempo,8,12,4
+6,energetic,4,noisy,3,3,0
+6,energetic,5,emotional,3,2,-1
+6,energetic,7,passionate,6,7,1
+6,energetic,8,amateur recording,0,0,0
+6,energetic,9,bass guitar,0,0,0
+6,energetic,10,electric guitar,0,0,0
+6,energetic,11,live performance,3,3,0
+6,energetic,12,slow tempo,0,0,0
+6,energetic,13,male vocal,0,0,0
+6,energetic,14,mono,0,0,0
+6,energetic,15,acoustic drums,2,0,-2
+6,energetic,16,groovy,2,5,3
+6,energetic,17,no voices,0,0,0
+6,energetic,18,acoustic guitar,2,3,1
+6,energetic,19,piano,0,0,0
+7,passionate,0,low quality,0,0,0
+7,passionate,1,instrumental,2,3,1
+7,passionate,2,medium tempo,0,0,0
+7,passionate,3,fast tempo,2,0,-2
+7,passionate,4,noisy,0,0,0
+7,passionate,5,emotional,1,0,-1
+7,passionate,6,energetic,0,0,0
+7,passionate,8,amateur recording,0,0,0
+7,passionate,9,bass guitar,1,1,0
+7,passionate,10,electric guitar,0,0,0
+7,passionate,11,live performance,4,2,-2
+7,passionate,12,slow tempo,0,0,0
+7,passionate,13,male vocal,0,0,0
+7,passionate,14,mono,0,0,0
+7,passionate,15,acoustic drums,0,0,0
+7,passionate,16,groovy,2,1,-1
+7,passionate,17,no voices,0,0,0
+7,passionate,18,acoustic guitar,0,0,0
+7,passionate,19,piano,0,0,0
+8,amateur recording,0,low quality,2,2,0
+8,amateur recording,1,instrumental,0,0,0
+8,amateur recording,2,medium tempo,2,5,3
+8,amateur recording,3,fast tempo,5,8,3
+8,amateur recording,4,noisy,0,1,1
+8,amateur recording,5,emotional,4,3,-1
+8,amateur recording,6,energetic,2,0,-2
+8,amateur recording,7,passionate,1,0,-1
+8,amateur recording,9,bass guitar,0,0,0
+8,amateur recording,10,electric guitar,0,0,0
+8,amateur recording,11,live performance,4,0,-4
+8,amateur recording,12,slow tempo,3,3,0
+8,amateur recording,13,male vocal,2,0,-2
+8,amateur recording,14,mono,0,0,0
+8,amateur recording,15,acoustic drums,3,3,0
+8,amateur recording,16,groovy,1,0,-1
+8,amateur recording,17,no voices,0,0,0
+8,amateur recording,18,acoustic guitar,0,0,0
+8,amateur recording,19,piano,0,0,0
+9,bass guitar,0,low quality,0,0,0
+9,bass guitar,1,instrumental,0,0,0
+9,bass guitar,2,medium tempo,5,6,1
+9,bass guitar,3,fast tempo,3,4,1
+9,bass guitar,4,noisy,0,0,0
+9,bass guitar,5,emotional,0,0,0
+9,bass guitar,6,energetic,0,0,0
+9,bass guitar,7,passionate,0,0,0
+9,bass guitar,8,amateur recording,1,3,2
+9,bass guitar,10,electric guitar,1,3,2
+9,bass guitar,11,live performance,2,3,1
+9,bass guitar,12,slow tempo,0,0,0
+9,bass guitar,13,male vocal,1,1,0
+9,bass guitar,14,mono,0,0,0
+9,bass guitar,15,acoustic drums,0,0,0
+9,bass guitar,16,groovy,0,0,0
+9,bass guitar,17,no voices,0,0,0
+9,bass guitar,18,acoustic guitar,0,0,0
+9,bass guitar,19,piano,0,0,0
+10,electric guitar,0,low quality,3,3,0
+10,electric guitar,1,instrumental,0,0,0
+10,electric guitar,2,medium tempo,0,0,0
+10,electric guitar,3,fast tempo,6,6,0
+10,electric guitar,4,noisy,0,1,1
+10,electric guitar,5,emotional,0,0,0
+10,electric guitar,6,energetic,2,0,-2
+10,electric guitar,7,passionate,1,0,-1
+10,electric guitar,8,amateur recording,0,0,0
+10,electric guitar,9,bass guitar,0,0,0
+10,electric guitar,11,live performance,2,0,-2
+10,electric guitar,12,slow tempo,0,0,0
+10,electric guitar,13,male vocal,0,0,0
+10,electric guitar,14,mono,0,0,0
+10,electric guitar,15,acoustic drums,0,0,0
+10,electric guitar,16,groovy,0,0,0
+10,electric guitar,17,no voices,0,0,0
+10,electric guitar,18,acoustic guitar,0,0,0
+10,electric guitar,19,piano,0,0,0
+11,live performance,0,low quality,3,3,0
+11,live performance,1,instrumental,0,2,2
+11,live performance,2,medium tempo,6,6,0
+11,live performance,3,fast tempo,1,0,-1
+11,live performance,4,noisy,0,0,0
+11,live performance,5,emotional,8,8,0
+11,live performance,6,energetic,7,9,2
+11,live performance,7,passionate,7,4,-3
+11,live performance,8,amateur recording,0,0,0
+11,live performance,9,bass guitar,0,1,1
+11,live performance,10,electric guitar,0,0,0
+11,live performance,12,slow tempo,3,3,0
+11,live performance,13,male vocal,0,0,0
+11,live performance,14,mono,0,0,0
+11,live performance,15,acoustic drums,0,0,0
+11,live performance,16,groovy,6,3,-3
+11,live performance,17,no voices,0,0,0
+11,live performance,18,acoustic guitar,6,6,0
+11,live performance,19,piano,0,0,0
+12,slow tempo,0,low quality,0,0,0
+12,slow tempo,1,instrumental,0,0,0
+12,slow tempo,2,medium tempo,13,13,0
+12,slow tempo,3,fast tempo,5,6,1
+12,slow tempo,4,noisy,0,0,0
+12,slow tempo,5,emotional,3,3,0
+12,slow tempo,6,energetic,0,0,0
+12,slow tempo,7,passionate,3,3,0
+12,slow tempo,8,amateur recording,7,6,-1
+12,slow tempo,9,bass guitar,4,3,-1
+12,slow tempo,10,electric guitar,6,3,-3
+12,slow tempo,11,live performance,1,2,1
+12,slow tempo,13,male vocal,0,0,0
+12,slow tempo,14,mono,0,0,0
+12,slow tempo,15,acoustic drums,2,0,-2
+12,slow tempo,16,groovy,1,0,-1
+12,slow tempo,17,no voices,0,0,0
+12,slow tempo,18,acoustic guitar,5,7,2
+12,slow tempo,19,piano,1,2,1
+13,male vocal,0,low quality,0,0,0
+13,male vocal,1,instrumental,0,0,0
+13,male vocal,2,medium tempo,0,3,3
+13,male vocal,3,fast tempo,5,6,1
+13,male vocal,4,noisy,0,0,0
+13,male vocal,5,emotional,2,2,0
+13,male vocal,6,energetic,0,0,0
+13,male vocal,7,passionate,3,2,-1
+13,male vocal,8,amateur recording,1,3,2
+13,male vocal,9,bass guitar,0,2,2
+13,male vocal,10,electric guitar,4,9,5
+13,male vocal,11,live performance,0,0,0
+13,male vocal,12,slow tempo,0,0,0
+13,male vocal,14,mono,0,0,0
+13,male vocal,15,acoustic drums,0,1,1
+13,male vocal,16,groovy,3,3,0
+13,male vocal,17,no voices,0,0,0
+13,male vocal,18,acoustic guitar,0,0,0
+13,male vocal,19,piano,0,0,0
+14,mono,0,low quality,0,0,0
+14,mono,1,instrumental,0,0,0
+14,mono,2,medium tempo,0,0,0
+14,mono,3,fast tempo,0,0,0
+14,mono,4,noisy,0,0,0
+14,mono,5,emotional,0,0,0
+14,mono,6,energetic,0,0,0
+14,mono,7,passionate,0,0,0
+14,mono,8,amateur recording,0,0,0
+14,mono,9,bass guitar,0,0,0
+14,mono,10,electric guitar,0,0,0
+14,mono,11,live performance,0,0,0
+14,mono,12,slow tempo,0,0,0
+14,mono,13,male vocal,0,0,0
+14,mono,15,acoustic drums,0,0,0
+14,mono,16,groovy,0,0,0
+14,mono,17,no voices,0,0,0
+14,mono,18,acoustic guitar,0,0,0
+14,mono,19,piano,0,0,0
+15,acoustic drums,0,low quality,0,0,0
+15,acoustic drums,1,instrumental,0,0,0
+15,acoustic drums,2,medium tempo,1,3,2
+15,acoustic drums,3,fast tempo,1,0,-1
+15,acoustic drums,4,noisy,0,0,0
+15,acoustic drums,5,emotional,0,0,0
+15,acoustic drums,6,energetic,0,0,0
+15,acoustic drums,7,passionate,0,0,0
+15,acoustic drums,8,amateur recording,1,0,-1
+15,acoustic drums,9,bass guitar,1,0,-1
+15,acoustic drums,10,electric guitar,0,0,0
+15,acoustic drums,11,live performance,0,0,0
+15,acoustic drums,12,slow tempo,0,0,0
+15,acoustic drums,13,male vocal,2,0,-2
+15,acoustic drums,14,mono,0,0,0
+15,acoustic drums,16,groovy,0,0,0
+15,acoustic drums,17,no voices,0,0,0
+15,acoustic drums,18,acoustic guitar,0,0,0
+15,acoustic drums,19,piano,1,0,-1
+16,groovy,0,low quality,0,0,0
+16,groovy,1,instrumental,0,0,0
+16,groovy,2,medium tempo,1,0,-1
+16,groovy,3,fast tempo,0,0,0
+16,groovy,4,noisy,0,0,0
+16,groovy,5,emotional,4,3,-1
+16,groovy,6,energetic,0,0,0
+16,groovy,7,passionate,3,3,0
+16,groovy,8,amateur recording,0,0,0
+16,groovy,9,bass guitar,3,3,0
+16,groovy,10,electric guitar,0,0,0
+16,groovy,11,live performance,4,3,-1
+16,groovy,12,slow tempo,1,0,-1
+16,groovy,13,male vocal,0,0,0
+16,groovy,14,mono,0,0,0
+16,groovy,15,acoustic drums,3,3,0
+16,groovy,17,no voices,0,0,0
+16,groovy,18,acoustic guitar,0,0,0
+16,groovy,19,piano,0,0,0
+17,no voices,0,low quality,0,0,0
+17,no voices,1,instrumental,0,0,0
+17,no voices,2,medium tempo,0,0,0
+17,no voices,3,fast tempo,0,0,0
+17,no voices,4,noisy,0,0,0
+17,no voices,5,emotional,0,0,0
+17,no voices,6,energetic,0,0,0
+17,no voices,7,passionate,0,0,0
+17,no voices,8,amateur recording,0,0,0
+17,no voices,9,bass guitar,0,0,0
+17,no voices,10,electric guitar,0,0,0
+17,no voices,11,live performance,0,0,0
+17,no voices,12,slow tempo,0,0,0
+17,no voices,13,male vocal,0,0,0
+17,no voices,14,mono,0,0,0
+17,no voices,15,acoustic drums,0,0,0
+17,no voices,16,groovy,0,0,0
+17,no voices,18,acoustic guitar,0,0,0
+17,no voices,19,piano,0,0,0
+18,acoustic guitar,0,low quality,0,0,0
+18,acoustic guitar,1,instrumental,0,0,0
+18,acoustic guitar,2,medium tempo,0,4,4
+18,acoustic guitar,3,fast tempo,0,2,2
+18,acoustic guitar,4,noisy,0,0,0
+18,acoustic guitar,5,emotional,0,0,0
+18,acoustic guitar,6,energetic,0,0,0
+18,acoustic guitar,7,passionate,0,0,0
+18,acoustic guitar,8,amateur recording,1,2,1
+18,acoustic guitar,9,bass guitar,0,0,0
+18,acoustic guitar,10,electric guitar,3,3,0
+18,acoustic guitar,11,live performance,0,0,0
+18,acoustic guitar,12,slow tempo,0,0,0
+18,acoustic guitar,13,male vocal,2,1,-1
+18,acoustic guitar,14,mono,0,0,0
+18,acoustic guitar,15,acoustic drums,4,2,-2
+18,acoustic guitar,16,groovy,0,0,0
+18,acoustic guitar,17,no voices,0,0,0
+18,acoustic guitar,19,piano,0,0,0
+19,piano,0,low quality,0,0,0
+19,piano,1,instrumental,0,0,0
+19,piano,2,medium tempo,0,0,0
+19,piano,3,fast tempo,0,0,0
+19,piano,4,noisy,0,0,0
+19,piano,5,emotional,0,0,0
+19,piano,6,energetic,0,0,0
+19,piano,7,passionate,0,0,0
+19,piano,8,amateur recording,0,0,0
+19,piano,9,bass guitar,0,0,0
+19,piano,10,electric guitar,0,0,0
+19,piano,11,live performance,0,0,0
+19,piano,12,slow tempo,0,0,0
+19,piano,13,male vocal,0,0,0
+19,piano,14,mono,0,0,0
+19,piano,15,acoustic drums,0,0,0
+19,piano,16,groovy,0,0,0
+19,piano,17,no voices,0,0,0
+19,piano,18,acoustic guitar,0,0,0

@@ -1,0 +1,4 @@
+case_type,track_id,true_labels,bert_predicted_labels,m3_predicted_labels,bert_label_error_count,m3_label_error_count
+correct_high_confidence,mc_PIIAyM4H1UE_100_110,instrumental,instrumental,instrumental,0,0
+incorrect_high_confidence,mc_yuWjB3XA8tc_480_490,live performance,<none>,<none>,1,1
+hard_near_threshold,mc_RFbWkL818XQ_30_40,instrumental | medium tempo,instrumental | medium tempo | energetic,instrumental | medium tempo | energetic | groovy,1,2

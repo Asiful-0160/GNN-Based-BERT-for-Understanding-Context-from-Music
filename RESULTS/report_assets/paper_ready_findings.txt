@@ -1,0 +1,39 @@
+FINAL RESEARCH FINDINGS
+=======================
+
+Primary research question:
+Does GNN+BERT fusion improve multi-label music-context understanding over either modality alone?
+
+Overall TEST performance:
+BERT mean AUC-PR = 0.83133318
+Early Fusion mean AUC-PR = 0.83191649
+Early Fusion - BERT AUC-PR = +0.00058331
+
+BERT mean Macro-F1 = 0.78089422
+Early Fusion mean Macro-F1 = 0.78198704
+Early Fusion - BERT Macro-F1 = +0.00109281
+
+BERT mean Micro-F1 = 0.78079060
+Early Fusion mean Micro-F1 = 0.78421469
+Early Fusion - BERT Micro-F1 = +0.00342410
+
+Exploratory paired bootstrap:
+AUC-PR 95% CI = [-0.00930631, +0.01039828]
+Macro-F1 95% CI = [-0.00756224, +0.00916831]
+Micro-F1 95% CI = [-0.00435494, +0.01088484]
+
+Interpretation:
+All exploratory confidence intervals include zero. Therefore the experiment does not provide evidence of a reliable overall performance advantage for Early Fusion over BERT.
+Early Fusion and BERT should be described as essentially comparable overall, with a very small mean advantage for Early Fusion.
+
+Audio-only comparison:
+CNN mean AUC-PR = 0.22324414
+GAT seed-42 AUC-PR = 0.18767503
+Early Fusion clearly outperformed the audio-only baselines.
+
+Largest label-specific effects:
+Best AUC-PR gain: passionate (+0.046097)
+Largest AUC-PR reduction: acoustic drums (-0.063072)
+
+Reporting caution:
+The bootstrap analysis is exploratory and post-hoc. Do not describe the tiny overall Fusion-BERT difference as statistically significant.

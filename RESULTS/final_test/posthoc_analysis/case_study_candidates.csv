@@ -1,0 +1,4 @@
+case_type,track_id,test_row_index,true_labels,m3_predicted_labels,bert_predicted_labels,m3_label_error_count,bert_label_error_count,m3_average_classification_confidence,m3_max_wrong_confidence,m3_three_closest_threshold_margin_mean
+correct_high_confidence,mc_PIIAyM4H1UE_100_110,242,instrumental,instrumental,instrumental,0,0,0.9987499133092541,0.0,0.5597881676473965
+incorrect_high_confidence,mc_yuWjB3XA8tc_480_490,506,live performance,<none>,<none>,1,1,0.9944137774822878,0.9999805264069437,0.6640277555833259
+hard_near_threshold,mc_RFbWkL818XQ_30_40,260,instrumental | medium tempo,instrumental | medium tempo | energetic | groovy,instrumental | medium tempo | energetic,2,1,0.8707931154145626,0.9568458199501038,0.02947897116343179

@@ -1,0 +1,6 @@
+result,mean,spread,spread_type,scale
+Task4 VAL retrieval mR,0.09554690608961709,0.0022516934606272277,population SD,0-1
+Task4 TEST retrieval mR,0.07955036467562114,0.006508460452874664,population SD,0-1
+Task4 zero-shot Caption→Label Macro AP,0.27425702018729,0.022253726743809807,population SD,0-1
+Task4 zero-shot Audio→Label Macro AP,0.1457985072691361,0.006035234046428527,population SD,0-1
+Human caption-audio match rating,3.02,1.5842335428740761,sample SD,1-5

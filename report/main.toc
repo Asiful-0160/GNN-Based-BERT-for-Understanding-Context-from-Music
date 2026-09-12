@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {I}Introduction and Motivation}{1}{section.1}%
+\contentsline {section}{\numberline {II}Related Work and Background}{1}{section.2}%
+\contentsline {section}{\numberline {III}Problem Formulation}{1}{section.3}%
+\contentsline {section}{\numberline {IV}Dataset and Preprocessing}{1}{section.4}%
+\contentsline {subsection}{\numberline {\mbox {IV-A}}Acquisition and canonical split}{1}{subsection.4.1}%
+\contentsline {subsection}{\numberline {\mbox {IV-B}}Text and labels}{2}{subsection.4.2}%
+\contentsline {subsection}{\numberline {\mbox {IV-C}}Audio features and graph construction}{2}{subsection.4.3}%
+\contentsline {section}{\numberline {V}Methodology}{2}{section.5}%
+\contentsline {subsection}{\numberline {\mbox {V-A}}Task 1: BERT baseline}{2}{subsection.5.1}%
+\contentsline {subsection}{\numberline {\mbox {V-B}}Task 2: Audio-only models}{2}{subsection.5.2}%
+\contentsline {subsection}{\numberline {\mbox {V-C}}Task 3: GNN--BERT fusion}{3}{subsection.5.3}%
+\contentsline {subsection}{\numberline {\mbox {V-D}}Task 4: Contrastive alignment and readout}{3}{subsection.5.4}%
+\contentsline {section}{\numberline {VI}Experimental Setup}{3}{section.6}%
+\contentsline {subsection}{\numberline {\mbox {VI-A}}Selection, baselines, and metrics}{3}{subsection.6.1}%
+\contentsline {subsection}{\numberline {\mbox {VI-B}}Reproducibility and numerical conventions}{3}{subsection.6.2}%
+\contentsline {section}{\numberline {VII}Results}{3}{section.7}%
+\contentsline {subsection}{\numberline {\mbox {VII-A}}Tasks 1 and 2: Validation selection}{3}{subsection.7.1}%
+\contentsline {subsection}{\numberline {\mbox {VII-B}}Task 3: Fusion and final supervised comparison}{4}{subsection.7.2}%
+\contentsline {subsection}{\numberline {\mbox {VII-C}}Task 4: Retrieval and prototype readout}{4}{subsection.7.3}%
+\contentsline {subsection}{\numberline {\mbox {VII-D}}Human evaluation}{4}{subsection.7.4}%
+\contentsline {section}{\numberline {VIII}Discussion}{4}{section.8}%
+\contentsline {section}{\numberline {IX}Limitations and Threats to Validity}{4}{section.9}%
+\contentsline {section}{\numberline {X}Conclusion and Future Work}{6}{section.10}%
+\contentsline {section}{References}{6}{section*.3}%
+\contentsline {section}{Appendix\nobreakspace A: Audit, Configuration, and Qualitative Evidence}{7}{section*.4}%
+\contentsline {section}{Appendix\nobreakspace B: Artifact Provenance}{8}{section*.5}%

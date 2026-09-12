@@ -1,0 +1,138 @@
+{
+  "artifact_type": "task4_final_results_summary",
+  "audit": {
+    "path": "results/runs/task4/final/task4_final_audit.json",
+    "sha256": "712bb131762a9791550db2a4b98aa271824c9c878f54d9ef7fe4917c846a3413"
+  },
+  "created_utc": "2026-09-12T02:41:04.826079+00:00",
+  "figures": {
+    "human": {
+      "path": "results/runs/task4/final/figures/task4_human_ratings.png",
+      "sha256": "879286146ab52d9c369ee278b1b17393c33c778cd985baa4071dc54785147d9e"
+    },
+    "test_recall": {
+      "path": "results/runs/task4/final/figures/task4_test_recall_at_k.png",
+      "sha256": "120a0566fae6374344850e508fbb24d79bde236a34efe0e19e35c5f3c6194f79"
+    },
+    "val_vs_test": {
+      "path": "results/runs/task4/final/figures/task4_val_vs_test_mR.png",
+      "sha256": "c48305370759382160f3057fd68091404e8a652688f411098e718fe86f95d749"
+    },
+    "zero_shot": {
+      "path": "results/runs/task4/final/figures/task4_zero_shot_macro_ap.png",
+      "sha256": "4c6f26de899afe4dc3c17a31da41988de3a4f1b20ecd202ab955a58c09b3ec36"
+    }
+  },
+  "final_seeds": [
+    42,
+    1337,
+    2026
+  ],
+  "human_evaluation": {
+    "listener_mean": 3.0199999999999996,
+    "listener_mean_sd_sample": 0.61400325732035,
+    "listeners": 5,
+    "pooled_mean": 3.02,
+    "pooled_sd_sample": 1.5842335428740761,
+    "total_ratings": 50
+  },
+  "next_action": "Use frozen Tasks 1–4 artifacts for final report/demo. Do not modify experimental results.",
+  "qualitative": {
+    "hand_picking": false,
+    "model_seed": 42,
+    "queries": 10,
+    "query_selection": "pre-TEST frozen",
+    "top_k": 3
+  },
+  "reporting_interpretation": {
+    "human": "The mean human score is approximately moderate match, with substantial listener/item-level variability.",
+    "retrieval": "The contrastive T4-B model retrieves paired cross-modal items substantially above the 514-item random baseline, while TEST performance is lower than validation performance.",
+    "zero_shot": "Caption embeddings transfer more strongly to canonical text-label prototypes than audio embeddings, but zero-shot Macro AP remains far below the frozen supervised Task-3 classifier."
+  },
+  "retrieval": {
+    "multiple_over_random_mR": 7.666666395612988,
+    "random_mR": 0.010376134889753566,
+    "test_mR": {
+      "mean": 0.07955036467562114,
+      "std_population": 0.006508460452874664
+    },
+    "test_recall": {
+      "audio_to_caption_R@1": {
+        "mean": 0.0226977948720256,
+        "std_population": 0.007163009772237286
+      },
+      "audio_to_caption_R@10": {
+        "mean": 0.13683527211348212,
+        "std_population": 0.00930784756802525
+      },
+      "audio_to_caption_R@5": {
+        "mean": 0.08560311049222942,
+        "std_population": 0.005727471720325447
+      },
+      "caption_to_audio_R@1": {
+        "mean": 0.01945525252570703,
+        "std_population": 0.00572747129851937
+      },
+      "caption_to_audio_R@10": {
+        "mean": 0.14202334235111871,
+        "std_population": 0.01612166160015683
+      },
+      "caption_to_audio_R@5": {
+        "mean": 0.07068741569916404,
+        "std_population": 0.004852993008812058
+      }
+    },
+    "validation_mR": {
+      "mean": 0.09554690608961709,
+      "std_population": 0.0022516934606272277
+    }
+  },
+  "selected_variant": "T4-B",
+  "status": "TASK4_COMPLETE",
+  "supervised_comparison": {
+    "task3_model": "Task3 Early-Fusion supervised",
+    "task3_recomputed_in_script76": false,
+    "task3_reselected_in_script76": false,
+    "task3_supervised_test_macro_ap": 0.83191649,
+    "task4_caption_zero_shot_test_macro_ap_mean": 0.27425702018729,
+    "task4_fraction_of_task3": 0.3296689312977676,
+    "task4_minus_task3": -0.55765946981271
+  },
+  "tables": {
+    "human_table": {
+      "path": "results/runs/task4/final/tables/task4_human_eval_final.csv",
+      "sha256": "c68ff4397ff3fb667aec0cae3bdef15b9f7903b65416b656c22fc239cf301a77"
+    },
+    "key_results_table": {
+      "path": "results/runs/task4/final/tables/task4_key_results.csv",
+      "sha256": "f20ca58bad1bf2362448a7fe79b71bfd790a6e0b1bb33e233dadf0067c8f6733"
+    },
+    "retrieval_table": {
+      "path": "results/runs/task4/final/tables/task4_retrieval_final.csv",
+      "sha256": "0e530adf99dc18a8397eaa6f0e167d366d4f174128786cfe5341bea4e50795a4"
+    },
+    "task3_comparison_table": {
+      "path": "results/runs/task4/final/tables/task3_supervised_vs_task4_zeroshot.csv",
+      "sha256": "b076ba89725ea30cef067ee7027933b0c950208973ba22f48330e9cf7c6a9935"
+    },
+    "zero_shot_table": {
+      "path": "results/runs/task4/final/tables/task4_zero_shot_final.csv",
+      "sha256": "9fbc2065130f5c8700b87ade7c1246fa80e8ff429da0722ceb519db9676b3db9"
+    }
+  },
+  "version": 1,
+  "zero_shot": {
+    "audio_macro_ap": {
+      "mean": 0.1457985072691361,
+      "std_population": 0.006035234046428527
+    },
+    "caption_macro_ap": {
+      "mean": 0.27425702018729,
+      "std_population": 0.022253726743809807
+    },
+    "primary": "Caption→Label",
+    "primary_metric": "Macro Average Precision",
+    "prompt_engineering": false,
+    "test_threshold_tuning": false
+  }
+}

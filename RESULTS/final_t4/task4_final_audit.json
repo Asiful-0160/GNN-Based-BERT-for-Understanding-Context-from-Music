@@ -1,0 +1,685 @@
+{
+  "artifact_type": "task4_final_methodology_audit",
+  "checks": [
+    {
+      "category": "output_protection",
+      "check": "final Task-4 output directory does not already exist",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "pretraining lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "pretraining lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "canonical dataset exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "canonical dataset SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "BERT token cache exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "BERT token cache SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "BERT token manifest exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "BERT token manifest SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "graph manifest exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "graph manifest SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "frozen 20-label targets exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "frozen 20-label targets SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T1-B checkpoint exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T1-B checkpoint SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected A4 checkpoint exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected A4 checkpoint SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 design exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 design SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 design lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 design lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 model selection exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 model selection SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 model-selection lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "Task-4 model-selection lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "multi-seed validation CSV exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "multi-seed validation CSV SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "multi-seed validation summary exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "multi-seed validation summary SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "multi-seed validation lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "multi-seed validation lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "pre-TEST protocol exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "pre-TEST protocol SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "pre-TEST protocol lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "pre-TEST protocol lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval manifest exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval manifest SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval per-seed CSV exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval per-seed CSV SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval summary exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval summary SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "final TEST retrieval lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot validation freeze exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot validation freeze SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot per-seed/mode CSV exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot per-seed/mode CSV SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot per-label CSV exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot per-label CSV SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot TEST summary exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot TEST summary SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot TEST lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "zero-shot TEST lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "qualitative retrieval CSV exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "qualitative retrieval CSV SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "qualitative retrieval JSON exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "qualitative retrieval JSON SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "qualitative retrieval lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "qualitative retrieval lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation package exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation package SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation package lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation package lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation per-item CSV exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation per-item CSV SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation result exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation result SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation result lock exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "human-evaluation result lock SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T4-B seed-42 checkpoint exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T4-B seed-42 checkpoint SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T4-B seed-1337 checkpoint exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T4-B seed-1337 checkpoint SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T4-B seed-2026 checkpoint exists",
+      "pass": true
+    },
+    {
+      "category": "hash_lineage",
+      "check": "selected T4-B seed-2026 checkpoint SHA256 matches accepted frozen identity",
+      "pass": true
+    },
+    {
+      "category": "result_schema",
+      "check": "final TEST retrieval CSV contains exactly 3 seeds",
+      "pass": true
+    },
+    {
+      "category": "result_schema",
+      "check": "zero-shot CSV contains 3 seeds × 2 modes",
+      "pass": true
+    },
+    {
+      "category": "result_schema",
+      "check": "qualitative CSV contains exactly 30 Top-3 rows",
+      "pass": true
+    },
+    {
+      "category": "result_schema",
+      "check": "human per-item CSV contains exactly 10 items",
+      "pass": true
+    },
+    {
+      "category": "model_selection",
+      "check": "final selected Task-4 architecture remains T4-B",
+      "pass": true
+    },
+    {
+      "category": "model_selection",
+      "check": "Task-4 architecture selection used validation only",
+      "pass": true
+    },
+    {
+      "category": "model_selection",
+      "check": "final seed set remained 42/1337/2026",
+      "pass": true
+    },
+    {
+      "category": "model_selection",
+      "check": "best-seed selection was forbidden before TEST",
+      "pass": true
+    },
+    {
+      "category": "test_discipline",
+      "check": "final TEST retrieval evaluated all predetermined seeds",
+      "pass": true
+    },
+    {
+      "category": "test_discipline",
+      "check": "final TEST candidate pool contained exactly 514 pairs",
+      "pass": true
+    },
+    {
+      "category": "test_discipline",
+      "check": "no TEST-based seed selection was performed",
+      "pass": true
+    },
+    {
+      "category": "test_discipline",
+      "check": "no seed ensemble was introduced",
+      "pass": true
+    },
+    {
+      "category": "test_discipline",
+      "check": "retrieval evaluation loaded zero TEST tag labels",
+      "pass": true
+    },
+    {
+      "category": "test_discipline",
+      "check": "retrieval used normalized cosine without post-hoc temperature",
+      "pass": true
+    },
+    {
+      "category": "zero_shot",
+      "check": "primary zero-shot mode remained Caption→Label",
+      "pass": true
+    },
+    {
+      "category": "zero_shot",
+      "check": "zero-shot primary metric remained Macro Average Precision",
+      "pass": true
+    },
+    {
+      "category": "zero_shot",
+      "check": "zero-shot label prompts were not engineered on TEST",
+      "pass": true
+    },
+    {
+      "category": "zero_shot",
+      "check": "zero-shot stage performed no best-seed selection",
+      "pass": true
+    },
+    {
+      "category": "zero_shot",
+      "check": "zero-shot F1 thresholds were not tuned on TEST",
+      "pass": true
+    },
+    {
+      "category": "zero_shot",
+      "check": "contrastive Task-4 training used no tag supervision",
+      "pass": true
+    },
+    {
+      "category": "qualitative",
+      "check": "qualitative evaluation used exactly 10 frozen queries",
+      "pass": true
+    },
+    {
+      "category": "qualitative",
+      "check": "qualitative model seed remained pre-frozen seed 42",
+      "pass": true
+    },
+    {
+      "category": "qualitative",
+      "check": "qualitative examples were not hand-picked",
+      "pass": true
+    },
+    {
+      "category": "qualitative",
+      "check": "qualitative retrieval reused the frozen Script-72 result",
+      "pass": true
+    },
+    {
+      "category": "qualitative",
+      "check": "qualitative stage performed no model re-inference",
+      "pass": true
+    },
+    {
+      "category": "human_evaluation",
+      "check": "human evaluation met the minimum 5-listener requirement",
+      "pass": true
+    },
+    {
+      "category": "human_evaluation",
+      "check": "human evaluation used the same 10 frozen queries",
+      "pass": true
+    },
+    {
+      "category": "human_evaluation",
+      "check": "human rating matrix is complete",
+      "pass": true
+    },
+    {
+      "category": "human_evaluation",
+      "check": "human-evaluation queries were not reselected",
+      "pass": true
+    },
+    {
+      "category": "human_evaluation",
+      "check": "human evaluation reused frozen Top-1 retrievals",
+      "pass": true
+    },
+    {
+      "category": "human_evaluation",
+      "check": "human evaluation performed no model re-inference",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "validation table contains exactly seeds 42/1337/2026",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "TEST retrieval table contains exactly final 3 seeds",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "recomputed three-seed TEST mR mean matches frozen summary",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "recomputed three-seed TEST mR population SD matches frozen summary",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "caption zero-shot results cover all 3 predetermined seeds",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "audio zero-shot results cover all 3 predetermined seeds",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "recomputed caption zero-shot Macro AP mean matches frozen summary",
+      "pass": true
+    },
+    {
+      "category": "metric_arithmetic",
+      "check": "recomputed audio zero-shot Macro AP mean matches frozen summary",
+      "pass": true
+    }
+  ],
+  "created_utc": "2026-09-12T02:41:04.822138+00:00",
+  "failures": 0,
+  "final_results": {
+    "human_evaluation": {
+      "listener_mean": 3.0199999999999996,
+      "listener_mean_sd_sample": 0.61400325732035,
+      "listeners": 5,
+      "pooled_mean": 3.02,
+      "pooled_sd_sample": 1.5842335428740761,
+      "total_ratings": 50
+    },
+    "task3_supervised_comparison": {
+      "task3_model": "Task3 Early-Fusion supervised",
+      "task3_recomputed_in_script76": false,
+      "task3_reselected_in_script76": false,
+      "task3_supervised_test_macro_ap": 0.83191649,
+      "task4_caption_zero_shot_test_macro_ap_mean": 0.27425702018729,
+      "task4_fraction_of_task3": 0.3296689312977676,
+      "task4_minus_task3": -0.55765946981271
+    },
+    "test_retrieval": {
+      "absolute_generalization_gap": -0.01599654141399595,
+      "mR_by_seed": {
+        "1337": 0.073281450352321,
+        "2026": 0.0885213979830344,
+        "42": 0.076848245691508
+      },
+      "mR_mean": 0.07955036467562114,
+      "mR_multiple_over_random": 7.666666395612988,
+      "mR_std_population": 0.006508460452874664,
+      "random_mR": 0.010376134889753566,
+      "recall_aggregate": {
+        "audio_to_caption_R@1": {
+          "mean": 0.0226977948720256,
+          "std_population": 0.007163009772237286
+        },
+        "audio_to_caption_R@10": {
+          "mean": 0.13683527211348212,
+          "std_population": 0.00930784756802525
+        },
+        "audio_to_caption_R@5": {
+          "mean": 0.08560311049222942,
+          "std_population": 0.005727471720325447
+        },
+        "caption_to_audio_R@1": {
+          "mean": 0.01945525252570703,
+          "std_population": 0.00572747129851937
+        },
+        "caption_to_audio_R@10": {
+          "mean": 0.14202334235111871,
+          "std_population": 0.01612166160015683
+        },
+        "caption_to_audio_R@5": {
+          "mean": 0.07068741569916404,
+          "std_population": 0.004852993008812058
+        }
+      },
+      "test_to_validation_ratio": 0.832579179497532
+    },
+    "validation_retrieval": {
+      "mR_by_seed": {
+        "1337": 0.0956549908344944,
+        "2026": 0.0982490247115492,
+        "42": 0.0927367027228077
+      },
+      "mR_mean": 0.09554690608961709,
+      "mR_std_population": 0.0022516934606272277
+    },
+    "zero_shot": {
+      "audio_macro_ap_mean": 0.1457985072691361,
+      "audio_macro_ap_std_population": 0.006035234046428527,
+      "caption_macro_ap_mean": 0.27425702018729,
+      "caption_macro_ap_std_population": 0.022253726743809807,
+      "caption_minus_audio_macro_ap": 0.12845851291815388,
+      "caption_to_audio_macro_ap_ratio": 1.8810687799500339
+    }
+  },
+  "final_scientific_state": {
+    "architecture_selected_on": "validation_only",
+    "best_seed_selected": false,
+    "final_seeds": [
+      42,
+      1337,
+      2026
+    ],
+    "human_query_reselection": false,
+    "human_retrieval_rerun": false,
+    "qualitative_hand_picking": false,
+    "qualitative_retrieval_rerun": false,
+    "seed_ensemble": false,
+    "selected_variant": "T4-B",
+    "test_reranking": false,
+    "test_reselection": false,
+    "test_retraining": false,
+    "zero_shot_prompt_engineering": false,
+    "zero_shot_test_threshold_tuning": false
+  },
+  "known_project_level_limitations": [
+    "MusicCaps caption/aspect annotations are semantically related; supervised tag classification therefore has a possible lexical/semantic shortcut risk.",
+    "Artist/recording near-duplicate leakage across splits has not been independently verified.",
+    "381 unavailable MusicCaps clips were excluded; resulting acquisition-selection bias was not separately quantified.",
+    "Human evaluation uses the frozen 10-query subset and five listeners, so it is a small qualitative validation rather than a population-level listening study."
+  ],
+  "script76": {
+    "path": "scripts/76_finalize_task4.py",
+    "sha256": "3789a7e40e4c722a0fc89869d192f79e82ecea4524fae8202b85180db8a6aec1"
+  },
+  "status": "task4_complete_all_required_stages_passed",
+  "version": 1,
+  "warnings": 0
+}

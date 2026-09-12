@@ -1,0 +1,61 @@
+{
+  "analysis_policy": {
+    "model_inference": false,
+    "model_selection": false,
+    "test_data_source": "saved Script-60 probability cache only",
+    "threshold_tuning": false,
+    "training": false
+  },
+  "artifact_type": "final_report_assets",
+  "case_study_outputs": [
+    "case_study_summary.csv",
+    "case_study_label_details.csv"
+  ],
+  "figures": [
+    "figure_training_T1B.png",
+    "figure_training_A1_CNN.png",
+    "figure_training_M3_phaseA.png",
+    "figure_training_M3_phaseB.png",
+    "figure_final_macro_f1.png",
+    "figure_final_micro_f1.png",
+    "figure_final_auc_pr.png",
+    "figure_fusion_per_label_aucpr_delta.png",
+    "figure_fusion_confusion_pairs.png",
+    "figure_G2_hard_case_graph.png"
+  ],
+  "graph_visualization": {
+    "added_nonlocal_undirected_edges": 5,
+    "graph_path": "data/processed/graphs/mc_RFbWkL818XQ_30_40.npz",
+    "node_feature_dimension": 140,
+    "nodes": 9,
+    "temporal_undirected_edges": 8,
+    "total_G2_undirected_edges": 13,
+    "track_id": "mc_RFbWkL818XQ_30_40"
+  },
+  "output_hashes": {
+    "case_study_label_details.csv": "315ec8dc9d9e30e69514410a8f561b7cc4fe768b72fccd39b7aa61293916b31f",
+    "case_study_summary.csv": "24e8ecb99728331abe31c72b3accfd0325fd618dd0f8336bb183ca377143cea8",
+    "figure_G2_hard_case_graph.png": "7118c18d8bb1685df7b7fe648ed3c0577c48d0df4b130a7e32c9585005eb0b89",
+    "figure_final_auc_pr.png": "d1925d84cac2f06e0ff31118b0bf37c715ba41152da529590d8c4338e3b2d13b",
+    "figure_final_macro_f1.png": "c1c4a9390dbc67641e17e9e8ed5f3a86455f3f158043fc31af4f4edeb6cdb649",
+    "figure_final_micro_f1.png": "58cbc4d4ed55e4a35422da057e1710b83b0a7697cde990c02d5a5ce4b4491d04",
+    "figure_fusion_confusion_pairs.png": "86c3f0fa5984b1268cf1f8c397a40ac86561f1d294213aa366b1d8ef71c297cd",
+    "figure_fusion_per_label_aucpr_delta.png": "8986a86b88c950698b39de4c94db1bf5b156a52ee0cfd6624374b2e89c154db1",
+    "figure_training_A1_CNN.png": "fac4f0566c7b50f1495821a55a12e30df41fbfff4dfa47d8e4e9b97d0e786230",
+    "figure_training_M3_phaseA.png": "5f85b3bc7fb305b729a183292e12ad9fbe7719c2b02004584136acbe1ec7c986",
+    "figure_training_M3_phaseB.png": "4a57469f08a62b3232347e9ab8ffa5c991ae84910ab83592af349411d8c2d47f",
+    "figure_training_T1B.png": "e2512ab212af61739d64c8ee43af6ff22c3c7bcf11d67f542d42881fde4e5923",
+    "g2_case_graph_edges.csv": "406f36f3d443847de3ace80c59271f62f34613ef67c93cb15a80ef6e09391ed9",
+    "g2_case_graph_summary.json": "9812196bfd29cee5051ea0469f9cfe6a60da28d10476148bff9d45912370a286",
+    "paper_ready_findings.txt": "4b4818b4b0646d54a09167df46f21863bf3a47097777af65bf372e4df50771f7"
+  },
+  "research_interpretation": "Early Fusion has a very small mean advantage over BERT, but exploratory paired-bootstrap intervals include zero for all three primary metrics; no reliable overall superiority claim.",
+  "source_artifacts": {
+    "final_multiseed_manifest_sha256": "ca4955591cb85957d628ac1c7cbcfd5595ad16010fece7362cf79dec8b524446",
+    "final_test_evaluation_sha256": "8c6db5aed0cd23b7300da3b403089e7048f7f4ffcb64dcb8f3d1f555bd59f35d",
+    "final_threshold_lock_sha256": "20118489eba0b5ee9d0568bfa1d76eb4c4a6a829c50042b83d738b31526b26e9",
+    "graph_manifest_sha256": "f092b7ca5f409f3e4fd34c6e3b0bce6ad0492bf90eccc929cadc1aad1da9e158",
+    "posthoc_analysis_sha256": "f2b114634c5002ace1df164e0f475c079c604c81f0f5014dd7bf1a196e93fdae"
+  },
+  "version": 1
+}

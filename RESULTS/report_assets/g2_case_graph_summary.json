@@ -1,0 +1,9 @@
+{
+  "added_nonlocal_undirected_edges": 5,
+  "graph_path": "data/processed/graphs/mc_RFbWkL818XQ_30_40.npz",
+  "node_feature_dimension": 140,
+  "nodes": 9,
+  "temporal_undirected_edges": 8,
+  "total_G2_undirected_edges": 13,
+  "track_id": "mc_RFbWkL818XQ_30_40"
+}

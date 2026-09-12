@@ -1,0 +1,8 @@
+{
+  "bert_vs_fusion_bootstrap.csv": "a58bd07d3f5b7a2a0138f1db4d2f62976c746b16c4afa899e2b3497970e41c8b",
+  "bert_vs_fusion_seed_differences.csv": "ded193a8805074a1fa36ea94a7f9e427a096d8bd4d67bea661b421df89b298e3",
+  "case_study_candidates.csv": "d214180dcb818267e0e7b823a5f5359d90384d1306726377ce5825690a2db1c3",
+  "fusion_confusion_pairs.csv": "6e8bc033927ab5497d31e2f3c02537eb0a06337733f3d2ab7bda475fd10ad7ca",
+  "fusion_per_label_deltas.csv": "d6a91b4195702d4a089887a19339529af85d9b259971f6005d5df9d63bc0dac0",
+  "posthoc_analysis.json": "f2b114634c5002ace1df164e0f475c079c604c81f0f5014dd7bf1a196e93fdae"
+}

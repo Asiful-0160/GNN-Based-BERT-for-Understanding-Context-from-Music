@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music–Caption Match Evaluation</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 20px 60px;
+    line-height: 1.5;
+}
+h1 {
+    margin-bottom: 8px;
+}
+.instructions {
+    background: #f3f3f3;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 20px 0;
+}
+.caption {
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+}
+audio {
+    width: 100%;
+    margin-bottom: 14px;
+}
+.rating {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+button {
+    padding: 12px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+input[type="text"] {
+    padding: 8px;
+    font-size: 1rem;
+}
+#error {
+    color: #a00;
+    font-weight: bold;
+    margin: 12px 0;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Music–Caption Match Evaluation</h1>
+
+<div class="instructions">
+<p>
+For each item, read the caption, listen to the complete audio clip,
+and rate how well the music matches the caption.
+</p>
+
+<p>
+<strong>1</strong> = No match<br>
+<strong>2</strong> = Weak match<br>
+<strong>3</strong> = Moderate match<br>
+<strong>4</strong> = Good match<br>
+<strong>5</strong> = Excellent match
+</p>
+
+<p>
+Please complete all 10 ratings independently.
+Do not discuss your ratings with another listener before finishing.
+</p>
+</div>
+
+<p>
+<label>
+<strong>Listener ID:</strong>
+<input id="listenerId"
+       type="text"
+       placeholder="Example: L01"
+       autocomplete="off">
+</label>
+</p>
+
+<div id="items"></div>
+
+<div id="error"></div>
+
+<button id="downloadButton">
+DOWNLOAD RATINGS CSV
+</button>
+
+<script>
+const items = [{"item_id": "Q01", "caption": "This clip is a vocalisation of the Om Mantra. The tempo is slow with a droning  melody and repetitive chanting of the word Om. It is meditative, calming, soothing, spiritual, lulling, hypnotic and trance like. This is Mantra Meditation  music.", "audio": "audio/Q01.wav"}, {"item_id": "Q02", "caption": "This is a shuffle music piece. It opens with a dissolving sound effect that signals that a drop is about to start. The dialing sound effects of a buttoned telephone can be heard. It mostly consists of electronic sounds that could be influenced by drum & bass.", "audio": "audio/Q02.wav"}, {"item_id": "Q03", "caption": "This song is an amateur recording of a person strumming an acoustic guitar. A group of adults and children sing the main melody using vocables and no lyrics. The melody is repetitive. There are no other instruments in this song. The song has a happy mood. This is a party song.", "audio": "audio/Q03.wav"}, {"item_id": "Q04", "caption": "A male singer sings this emotional song. The song is medium tempo with guitar accompaniment, strong bass line, steady drumming rhythm, violins playing emotional and tambourine percussion. The song is overlapped with sounds of a vehicle engine and Tarmac sounds.", "audio": "audio/Q04.wav"}, {"item_id": "Q05", "caption": "This clip features a male voice singing the main melody. Toward the end, the voice transitions to a female voice to make this sound like a duet. This is accompanied by a harp sound plucking strings. Chimes are played when the voice transitions from male to female. There is no percussion in this song. The voices are calming and relaxing. The theme of this song is romantic. This song can be played in a romantic movie.", "audio": "audio/Q05.wav"}, {"item_id": "Q06", "caption": "This is the recording of an electronic dance music/rave party. The rhythmic background consists of a loud electronic drum beat. There is a synth playing a simple and repeated theme. The atmosphere is energetic. This piece could be played at nightclubs, dance clubs and rave events. It could also be playing at beach parties.", "audio": "audio/Q06.wav"}, {"item_id": "Q07", "caption": "The music excerpt features a male and a female voice singing the same melody in unison. Accompanying the singers is a sitar that plays the same note throughout - what is called a harmonic pedal. The atmosphere points towards a kind of meditation through repetitive singing, a kind of channeling state.", "audio": "audio/Q07.wav"}, {"item_id": "Q08", "caption": "The Hindu Devotional Music features wide mixed harmonized vocals singing a very addictive cadence, followed by flat male vocal, wooden percussive elements and wide sustained synth pad chords. It sounds emotional, passionate and addictive - like something you would sing along to, even if you do now know the words.", "audio": "audio/Q08.wav"}, {"item_id": "Q09", "caption": "Someone is scratching along to a hip hop style backing song containing digital drums and a synth arpeggio sound playing in the midrange. Two male voices are speaking. This song may be playing while practicing scratching.", "audio": "audio/Q09.wav"}, {"item_id": "Q10", "caption": "A song is played in the background containing a brass melody. In the foreground you can hear a lot of clicking noises that do not belong to the music. This is an amateur recording. This song may be playing in a casino.", "audio": "audio/Q10.wav"}];
+
+const container =
+    document.getElementById("items");
+
+for (const item of items) {
+
+    const section =
+        document.createElement("section");
+
+    section.className =
+        "item";
+
+    const heading =
+        document.createElement("h2");
+
+    heading.textContent =
+        item.item_id;
+
+    section.appendChild(
+        heading
+    );
+
+    const caption =
+        document.createElement("div");
+
+    caption.className =
+        "caption";
+
+    caption.textContent =
+        item.caption;
+
+    section.appendChild(
+        caption
+    );
+
+    const audio =
+        document.createElement("audio");
+
+    audio.controls =
+        true;
+
+    audio.preload =
+        "metadata";
+
+    audio.src =
+        item.audio;
+
+    section.appendChild(
+        audio
+    );
+
+    const label =
+        document.createElement("div");
+
+    label.textContent =
+        "Your rating:";
+
+    section.appendChild(
+        label
+    );
+
+    const rating =
+        document.createElement("div");
+
+    rating.className =
+        "rating";
+
+    for (
+        let score = 1;
+        score <= 5;
+        score++
+    ) {
+
+        const wrapper =
+            document.createElement("label");
+
+        const input =
+            document.createElement("input");
+
+        input.type =
+            "radio";
+
+        input.name =
+            "rating_" + item.item_id;
+
+        input.value =
+            String(score);
+
+        wrapper.appendChild(
+            input
+        );
+
+        wrapper.appendChild(
+            document.createTextNode(
+                " " + score
+            )
+        );
+
+        rating.appendChild(
+            wrapper
+        );
+    }
+
+    section.appendChild(
+        rating
+    );
+
+    container.appendChild(
+        section
+    );
+}
+
+
+function csvEscape(value) {
+
+    const text =
+        String(value);
+
+    return '"' +
+        text.replaceAll(
+            '"',
+            '""'
+        ) +
+        '"';
+}
+
+
+document
+.getElementById(
+    "downloadButton"
+)
+.addEventListener(
+    "click",
+    () => {
+
+        const error =
+            document.getElementById(
+                "error"
+            );
+
+        error.textContent =
+            "";
+
+        const listenerId =
+            document
+            .getElementById(
+                "listenerId"
+            )
+            .value
+            .trim();
+
+        if (!listenerId) {
+
+            error.textContent =
+                "Please enter a listener ID.";
+
+            return;
+        }
+
+        const rows = [
+            [
+                "listener_id",
+                "item_id",
+                "rating"
+            ]
+        ];
+
+        for (const item of items) {
+
+            const selected =
+                document.querySelector(
+                    'input[name="rating_' +
+                    item.item_id +
+                    '"]:checked'
+                );
+
+            if (!selected) {
+
+                error.textContent =
+                    "Please rate all 10 items.";
+
+                return;
+            }
+
+            rows.push(
+                [
+                    listenerId,
+                    item.item_id,
+                    selected.value
+                ]
+            );
+        }
+
+        const csv =
+            rows
+            .map(
+                row =>
+                    row
+                    .map(
+                        csvEscape
+                    )
+                    .join(",")
+            )
+            .join("\n");
+
+        const blob =
+            new Blob(
+                [csv],
+                {
+                    type:
+                        "text/csv;charset=utf-8"
+                }
+            );
+
+        const url =
+            URL.createObjectURL(
+                blob
+            );
+
+        const safeListener =
+            listenerId.replace(
+                /[^A-Za-z0-9_-]/g,
+                "_"
+            );
+
+        const link =
+            document.createElement(
+                "a"
+            );
+
+        link.href =
+            url;
+
+        link.download =
+            "task4_human_eval_" +
+            safeListener +
+            ".csv";
+
+        document.body.appendChild(
+            link
+        );
+
+        link.click();
+
+        link.remove();
+
+        URL.revokeObjectURL(
+            url
+        );
+    }
+);
+</script>
+
+</body>
+</html>
