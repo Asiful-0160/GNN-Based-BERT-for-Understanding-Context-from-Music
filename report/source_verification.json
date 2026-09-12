@@ -470,10 +470,7 @@
   ],
   "hash_mismatches": [],
   "undefined_source_references": [],
-  "missing_figure_assets": [
-    "fig_tsne_task3.png",
-    "fig_task4_qualitative_top3.png"
-  ],
+  "missing_figure_assets": [],
   "undefined_citations": [],
   "unused_float_labels": [],
   "scope": "Local export only. No training, inference, metric recalculation, or upstream checkpoint verification."

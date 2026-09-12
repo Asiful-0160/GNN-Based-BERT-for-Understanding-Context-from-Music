@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.30)  12 SEP 2026 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.30)  12 SEP 2026 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -409,24 +409,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 -- Lines per column: 56 (exact).
 
@@ -455,18 +455,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 11.
+Package hyperref Info: Link coloring OFF on input line 10.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 
 (C:\Users\ghost\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (C:\Users\ghost\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -484,7 +484,7 @@ t/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (main.toc)
 
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 103--104
+Underfull \hbox (badness 2326) in paragraph at lines 102--103
 []\T1/ptm/m/n/10 The split was frozen be-fore vo-cab-u-lary con-struc-tion.
  []
 
@@ -494,7 +494,7 @@ Underfull \hbox (badness 2326) in paragraph at lines 103--104
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-8.
+7.
  (C:\Users\ghost\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -503,14 +503,14 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 File: figures/figure_G2_hard_case_graph.png Graphic file (type png)
 <use figures/figure_G2_hard_case_graph.png>
 Package pdftex.def Info: figures/figure_G2_hard_case_graph.png  used on input l
-ine 117.
+ine 116.
 (pdftex.def)             Requested size: 252.0pt x 119.45776pt.
 
 
 [2 <./figures/figure_G2_hard_case_graph.png>]
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 153--154
+Underfull \hbox (badness 4366) in paragraph at lines 152--153
 []\T1/ptm/m/n/10 Macro Av-er-age Pre-ci-sion is the mean of per-label
  []
 
@@ -518,24 +518,24 @@ Underfull \hbox (badness 4366) in paragraph at lines 153--154
 File: figures/figure_training_T1B.png Graphic file (type png)
 <use figures/figure_training_T1B.png>
 Package pdftex.def Info: figures/figure_training_T1B.png  used on input line 17
-8.
+7.
 (pdftex.def)             Requested size: 167.69843pt x 107.65636pt.
 <figures/figure_training_A1_CNN.png, id=146, 607.3965pt x 389.9295pt>
 File: figures/figure_training_A1_CNN.png Graphic file (type png)
 <use figures/figure_training_A1_CNN.png>
 Package pdftex.def Info: figures/figure_training_A1_CNN.png  used on input line
- 179.
+ 178.
 (pdftex.def)             Requested size: 167.69843pt x 107.65636pt.
 <figures/figure_training_M3_phaseB.png, id=147, 607.3965pt x 389.9295pt>
 File: figures/figure_training_M3_phaseB.png Graphic file (type png)
 <use figures/figure_training_M3_phaseB.png>
 Package pdftex.def Info: figures/figure_training_M3_phaseB.png  used on input l
-ine 180.
+ine 179.
 (pdftex.def)             Requested size: 167.69843pt x 107.65636pt.
 
 
 [3]
-Underfull \hbox (badness 2452) in paragraph at lines 196--197
+Underfull \hbox (badness 2452) in paragraph at lines 195--196
 \T1/ptm/m/n/10 2026. The ex-ploratory paired-bootstrap 95% in-ter-val is
  []
 
@@ -543,13 +543,13 @@ Underfull \hbox (badness 2452) in paragraph at lines 196--197
 File: figures/figure_final_auc_pr.png Graphic file (type png)
 <use figures/figure_final_auc_pr.png>
 Package pdftex.def Info: figures/figure_final_auc_pr.png  used on input line 21
-2.
+1.
 (pdftex.def)             Requested size: 252.0pt x 144.90744pt.
 <figures/task4_test_recall_at_k.png, id=169, 562.1pt x 342.881pt>
 File: figures/task4_test_recall_at_k.png Graphic file (type png)
 <use figures/task4_test_recall_at_k.png>
 Package pdftex.def Info: figures/task4_test_recall_at_k.png  used on input line
- 231.
+ 230.
 (pdftex.def)             Requested size: 252.0pt x 153.7195pt.
 
 
@@ -557,7 +557,7 @@ Package pdftex.def Info: figures/task4_test_recall_at_k.png  used on input line
 File: figures/task4_human_ratings.png Graphic file (type png)
 <use figures/task4_human_ratings.png>
 Package pdftex.def Info: figures/task4_human_ratings.png  used on input line 24
-9.
+8.
 (pdftex.def)             Requested size: 252.0pt x 156.38696pt.
 
 
@@ -568,15 +568,33 @@ Package pdftex.def Info: figures/task4_human_ratings.png  used on input line 24
 [5 <./figures/figure_training_T1B.png> <./figures/figure_training_A1_CNN.png> <
 ./figures/figure_training_M3_phaseB.png> <./figures/figure_final_auc_pr.png> <.
 /figures/task4_test_recall_at_k.png>]
-Underfull \vbox (badness 1199) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 (main.bbl)
 
 [6 <./figures/task4_human_ratings.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 323--323
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
 []|\T1/ptm/m/n/9 instrumental; medium
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+[]\T1/ptm/m/n/10 The pre-train-ing lock SHA256 is \T1/pcr/m/n/10 caffa90d9de726
+a6a28fb15b2ee0e28f4abac8f0766c90d5
+ []
+
+
+Underfull \hbox (badness 5622) in paragraph at lines 346--347
+\T1/pcr/m/n/10 b0e027a6c917b4e8\T1/ptm/m/n/10 . The Task-3 eval-u-a-tion hash r
+ecorded by the as-set man-i-fest is \T1/pcr/m/n/10 8c6db5aed0cd23b7
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+\T1/ptm/m/n/10 is \T1/pcr/m/n/10 712bb131762a9791550db2a4b98aa271824c9c878f54d9
+ef7fe4917c846a3413\T1/ptm/m/n/10 . These are prove-nance
  []
 
 
@@ -585,23 +603,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--323
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
-[]\T1/ptm/m/n/10 The pre-train-ing lock SHA256 is \T1/pcr/m/n/10 caffa90d9de726
-a6a28fb15b2ee0e28f4abac8f0766c90d5
- []
-
-
-Underfull \hbox (badness 5622) in paragraph at lines 357--358
-\T1/pcr/m/n/10 b0e027a6c917b4e8\T1/ptm/m/n/10 . The Task-3 eval-u-a-tion hash r
-ecorded by the as-set man-i-fest is \T1/pcr/m/n/10 8c6db5aed0cd23b7
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
-\T1/ptm/m/n/10 is \T1/pcr/m/n/10 712bb131762a9791550db2a4b98aa271824c9c878f54d9
-ef7fe4917c846a3413\T1/ptm/m/n/10 . These are prove-nance
- []
-
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -624,11 +625,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B5E9789F2DE80812FF7AB75828115494;2162.
  ) 
 Here is how much of TeX's memory you used:
- 11211 strings out of 473535
- 175883 string characters out of 5714935
- 590692 words of memory out of 5000000
- 34204 multiletter control sequences out of 15000+600000
- 678909 words of font info for 168 fonts, out of 8000000 for 9000
+ 11201 strings out of 473535
+ 175668 string characters out of 5714935
+ 590232 words of memory out of 5000000
+ 34197 multiletter control sequences out of 15000+600000
+ 677773 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,1692b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ghost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -650,9 +651,9 @@ ublic/amsfonts/symbols/msbm10.pfb><C:/Users/ghost/AppData/Local/Programs/MiKTeX
 eX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ghost/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ghost/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 917954 bytes).
+Output written on main.pdf (9 pages, 916426 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

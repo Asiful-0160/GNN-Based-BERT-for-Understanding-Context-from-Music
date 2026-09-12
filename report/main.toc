@@ -23,4 +23,4 @@
 \contentsline {section}{\numberline {X}Conclusion and Future Work}{6}{section.10}%
 \contentsline {section}{References}{6}{section*.3}%
 \contentsline {section}{Appendix\nobreakspace A: Audit, Configuration, and Qualitative Evidence}{7}{section*.4}%
-\contentsline {section}{Appendix\nobreakspace B: Artifact Provenance}{8}{section*.5}%
+\contentsline {section}{Appendix\nobreakspace B: Artifact Provenance}{7}{section*.5}%

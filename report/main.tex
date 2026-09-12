@@ -7,7 +7,6 @@
 \newcommand{\AP}{\operatorname{AP}}
 \newcommand{\reportauthors}{\begin{tabular}{lc}Mohammed Ali Hossain & 21301453\\[0.3em]Jarin Akter Mou & 20301070\\[0.3em]Asiful Kanzan Auishik & 19101628\end{tabular}}
 \newcommand{\reportinstitution}{BRAC University}
-\newcommand{\pendingfigure}[1]{\IfFileExists{figures/#1}{\includegraphics[width=\linewidth]{figures/#1}}{\par\small\textit{Requested source figure not yet supplied.}\par}}
 \begin{document}
 \onecolumn
 \begin{titlepage}
@@ -144,7 +143,7 @@ The dual encoder projects BERT CLS and pooled GAT features into a shared normali
 
 Validation mean recall selects T4-B before TEST. Retrieval then uses normalized cosine similarity without post-hoc reranking, best-seed selection, or ensembling. Canonical label phrases are embedded as prototypes, and caption or audio embeddings are scored against them for tag readout. No additional Task-4 tag-supervised optimization or TEST prompt engineering is performed. Nevertheless, upstream T1-B/A4 training used the same 20 labels. The experiment is therefore \emph{prototype-based tag readout after supervised encoder initialization}, not strict label-naive zero-shot learning.
 
-For qualitative evaluation, ten query indices and seed 42 were fixed before inspecting TEST retrieval. The saved similarity matrix supplies caption-to-audio top-three results; the listening study uses top-one clips for those same queries. The supplied HTML asks listeners to read each caption, hear the complete clip, and independently assign one rating: 1 no match, 2 weak match, 3 moderate match, 4 good match, or 5 excellent match. It requires a listener ID and all ten ratings before CSV export, but does not technically enforce complete playback. Five listeners provide a complete 50-rating design.
+For human evaluation, ten query indices and seed 42 were fixed before inspecting TEST retrieval. The listening study uses the top-one audio retrieval for each fixed caption query. The supplied HTML asks listeners to read each caption, hear the complete clip, and independently assign one rating: 1 no match, 2 weak match, 3 moderate match, 4 good match, or 5 excellent match. It requires a listener ID and all ten ratings before CSV export, but does not technically enforce complete playback. Five listeners provide a complete 50-rating design.
 
 \section{Experimental Setup}\label{sec:setup}
 \subsection{Selection, baselines, and metrics}
@@ -268,7 +267,7 @@ Retrieval asks a distinct question and provides complementary evidence. Above-ch
 
 \textbf{Contrastive and human interpretation.} InfoNCE treats other batch items as negatives even when musically similar. Exact-pair metrics penalize plausible alternatives. Prototype readout inherits tag-supervised encoders and is not strict label-naive zero-shot learning. Five listeners and ten fixed queries support descriptive conclusions only; a robust inter-rater reliability analysis is absent. The provided HTML records a listening instruction, not proof of playback compliance.
 
-\textbf{Provenance coverage.} The independent audit cannot certify the full source of nine scripts (07--12, 18, 62, 63). Git commit, full environment, and some training hyperparameters are unavailable. The Task-3 comparator in Task-4 consolidation is report-level rather than fully linked through the Task-4 hash chain; the separate Task-3 final JSON independently supplies the same value. Supplied case-study assets are available at result level, but this does not retroactively certify Scripts 62--63. The requested t-SNE and complete ten-query top-three retrieval panels are not present in the supplied export.
+\textbf{Provenance coverage.} The independent audit cannot certify the full source of nine scripts (07--12, 18, 62, 63). Git commit, full environment, and some training hyperparameters are unavailable. The Task-3 comparator in Task-4 consolidation is report-level rather than fully linked through the Task-4 hash chain; the separate Task-3 final JSON independently supplies the same value. Supplied case-study assets are available at result level, but this does not retroactively certify Scripts 62--63.
 
 \section{Conclusion and Future Work}\label{sec:conclusion}
 The project establishes a controlled four-task comparison on a frozen 5,140-clip MusicCaps corpus. Fine-tuned BERT is a strong predictor of the aspect-derived targets. Early Fusion recovers approximately the same overall performance and does not reliably surpass it. Contrastive graph--text training learns alignment substantially above random retrieval, while exact-pair accuracy remains modest and human match quality varies. Prototype-based tag readout underperforms supervised classification and requires explicit qualification because of supervised initialization.
@@ -340,16 +339,6 @@ Q09 & Scratching/hip-hop & 3.8 & 1.3038 & 2--5\\
 Q10 & Brass/clicking & 2.4 & 1.9494 & 1--5\\\bottomrule
 \end{tabular}
 \end{table}
-
-The original brief requests t-SNE and ten caption-to-top-three qualitative examples. Figure~\ref{fig:tsne} reserves the former supplied-artifact location; Figure~\ref{fig:qualitative} reserves the latter. No coordinates, ranks, retrieved identities, or missing audio are reconstructed from aggregate metrics. Query captions and rating summaries alone cannot supply the absent top-three retrieval results.
-\begin{figure}[!ht]\centering
-\pendingfigure{fig_tsne_task3.png}
-\caption{Reserved Task-3 t-SNE visualization from frozen fusion embeddings. Interpretation awaits the actual supplied figure and its label/color specification.}\label{fig:tsne}
-\end{figure}
-\begin{figure}[!ht]\centering
-\pendingfigure{fig_task4_qualitative_top3.png}
-\caption{Reserved qualitative panel for the ten pre-frozen caption queries and their seed-42 top-three audio retrievals. Actual retrieval examples must come from the frozen Script-74 export.}\label{fig:qualitative}
-\end{figure}
 
 \section{Artifact Provenance}\label{sec:provenance}
 The report uses the independent audit for implementation and workflow claims, the assignment for intended requirements, and the supplied JSON/CSV files for frozen quantitative results. The original result files remain unchanged. In particular, saved ``auc\_pr'' fields are interpreted using the explicit mean-AP definition in \texttt{final\_test\_evaluation.json}. Task-4 human-study documentation combines its frozen summary with the supplied \texttt{index.html} questionnaire.

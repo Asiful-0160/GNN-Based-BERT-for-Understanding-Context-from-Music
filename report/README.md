@@ -1,6 +1,6 @@
 # GNN–BERT project report
 
-The report is compiled and layout-checked in IEEEtran conference format, with a title/abstract page, two-column main text, and a readable single-column appendix. It is nine pages including all front matter and appendices. The authors are Mohammed Ali Hossain (21301453), Jarin Akter Mou (20301070), and Asiful Kanzan Auishik (19101628), BRAC University. Two requested figure assets remain pending, so this is not yet a submission-ready version.
+The report is compiled and layout-checked in IEEEtran conference format, with a title/abstract page, two-column main text, and a readable single-column appendix. It is nine pages including all front matter and appendices. The authors are Mohammed Ali Hossain (21301453), Jarin Akter Mou (20301070), and Asiful Kanzan Auishik (19101628), BRAC University.
 
 ## Files
 
@@ -11,17 +11,11 @@ The report is compiled and layout-checked in IEEEtran conference format, with a 
 - `source_verification.json`: inventory of all 44 supplied files, hashes, local manifest comparisons, and source-reference checks.
 - `verify_sources.py`: verifies sources without changing them and writes `source_verification.json`.
 
-## Still needed
+## Scope
 
-1. Course confirmed: CSE715. Moin Mostakim is credited only as the assignment-brief preparer, not assumed to be a report author or instructor.
-2. Confirm any change from the defaults: IEEE Conference, 6–10 pages, condensed audit appendix. Provide a repository/demo URL if it should appear.
-3. `figures/fig_tsne_task3.png`: the actual Task-3 embedding visualization, with its color-label and generation context. It must come from frozen embeddings; no coordinates have been fabricated.
-4. `figures/fig_task4_qualitative_top3.png`: the actual ten fixed queries and seed-42 top-three retrieval panel. The underlying Script-74 CSV/JSON is preferable if the panel does not already exist. The supplied questionnaire gives captions but not the retrieved identities or ranking scores.
-5. If available, final configuration/source records establishing optimizer settings, Phase-B trainable-layer scope, GPU/environment details, and Git commit would close documented reproducibility gaps. They are not inferred from generic defaults.
+Course: CSE715. The t-SNE figure and top-three retrieval examples are excluded from the final report at the authors' request. Their placeholders and pending-asset notices have been removed. Scientific qualifications concerning the reported results remain intact.
 
 The ten questionnaire WAV files have now been supplied. A complete listening supplement is available in the project-level `human_evaluation/` directory and `Human_Evaluation_Supplement.zip`. Open that supplement's `index.html` to replay the clips. The original RESULTS export is preserved; use the supplement copy for working audio paths. The PDF documents the study and saved results without embedding audio.
-
-Missing figures have conditional `includegraphics` calls, so the current review copy compiles with explicit textual notices. No substitute or fabricated image is generated. Captions should be finalized after the real missing figures are inspected.
 
 ## Compile
 
