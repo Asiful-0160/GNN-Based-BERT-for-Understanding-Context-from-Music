@@ -77,4 +77,22 @@ A.~Agostinelli \emph{et~al.}, ``{MusicLM}: Generating music from text,''
   \url{https://arxiv.org/abs/2301.11325}
 \BIBentrySTDinterwordspacing
 
+\bibitem{rgmc}
+\BIBentryALTinterwordspacing
+N.~Srivatsan, K.~Chen, S.~Dubnov, and T.~Berg-Kirkpatrick, ``Retrieval guided
+  music captioning via multimodal prefixes,'' in \emph{Proceedings of the
+  Thirty-Third International Joint Conference on Artificial Intelligence},
+  2024, pp. 7762--7770. [Online]. Available:
+  \url{https://www.ijcai.org/proceedings/2024/859}
+\BIBentrySTDinterwordspacing
+
+\bibitem{clamp3}
+\BIBentryALTinterwordspacing
+S.~Wu, G.~Zhancheng, R.~Yuan, J.~Jiang, S.~Doh, G.~Xia, J.~Nam, X.~Li, F.~Yu,
+  and M.~Sun, ``{CLaMP} 3: Universal music information retrieval across
+  unaligned modalities and unseen languages,'' in \emph{Findings of the
+  Association for Computational Linguistics: ACL 2025}, 2025, pp. 2605--2625.
+  [Online]. Available: \url{https://aclanthology.org/2025.findings-acl.133/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

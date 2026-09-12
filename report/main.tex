@@ -31,10 +31,11 @@ This project evaluates whether graph representations of audio improve music-cont
 \end{minipage}
 \vfill
 \end{titlepage}
-\twocolumn
 \pagestyle{plain}
 \setcounter{tocdepth}{1}
 \tableofcontents
+\clearpage
+\twocolumn
 \section{Introduction and Motivation}\label{sec:intro}
 Musical context includes instrumentation, tempo, mood, and production quality. We evaluate graph--text models on one frozen MusicCaps dataset and shared label vocabulary.
 
@@ -46,6 +47,8 @@ All four assignment stages are implemented. The independent audit documents the 
 BERT learns contextual text representations through bidirectional language-model pretraining and supports task adaptation with a classification head~\cite{bert}. Here it encodes human-authored music captions, not transcribed lyrics. GraphSAGE aggregates neighborhood features to construct inductive graph representations~\cite{sage}; GAT instead learns attention weights within graph neighborhoods~\cite{gat}. Both provide appropriate mechanisms for testing whether local temporal links and segment similarity help summarize music clips. Learned attention weights, however, are not automatically explanations of musical structure.
 
 InfoNCE trains representations by discriminating matched examples from alternatives~\cite{cpc}. CLIP demonstrates paired encoders trained with a symmetric cross-modal contrastive objective~\cite{clip}. This project applies that objective pattern to audio graphs and captions; it does not use CLIP weights or claim comparable scale. MusicCaps supplies musician-written captions and aspect lists for short audio clips~\cite{musiccaps,musiclm}. Its paired annotations enable all four tasks, but their semantic relationship also creates a potential shortcut in caption-to-tag prediction.
+
+Published work also uses MusicCaps for closely related audio--language problems. Srivatsan et al.~\cite{rgmc} evaluate retrieval-guided music captioning on MusicCaps, combining audio features with a retrieved caption to generate descriptions. Wu et al.~\cite{clamp3} evaluate text-to-music retrieval on MusicCaps in their CLaMP 3 study, including original clips/captions and modified evaluation settings; their main comparison also uses MusicCaps-Remake. These studies support MusicCaps as a relevant audio--language evaluation resource, particularly for Task 4. They do not validate our exact Top-20 label construction or graph architecture. Differences in training exposure, splits, candidate pools, and metrics prevent direct comparison with this project's frozen 514-pair TEST results. The CLaMP 3 study also discusses overlapping pretraining data, reinforcing the need to document dataset and model provenance.
 
 \section{Problem Formulation}\label{sec:problem}
 Following the assignment, a track is represented as
@@ -77,9 +80,28 @@ For contrastive learning, projections of $g_i$ and $t_i$ are normalized into $a_
 \end{equation}
 Equation~\eqref{eq:nce} uses $B=32$ and $\tau=0.07$. The diagonal encodes true pairs, while other batch items serve as negatives.
 
-\section{Dataset and Preprocessing}\label{sec:data}
+\section{Dataset Acquisition and Preprocessing}\label{sec:data}
+\subsection{Why MusicCaps supports all four tasks}
+MusicCaps was selected because each example links a timestamped audio clip, a musician-written description, and an aspect list~\cite{musiccaps,musiclm}. These three views make it possible to define all four experiments on the same underlying music examples. Table~\ref{tab:taskdata} explains the role of each view. This is a deliberate task construction: the 20-label vocabulary and segment graphs are project-derived representations, not official MusicCaps classification labels or supplied graph annotations.
+\begin{table}[t]\centering\small
+\caption{Role of MusicCaps in the four project tasks.}\label{tab:taskdata}
+\begin{tabular}{@{}p{.13\linewidth}p{.79\linewidth}@{}}\toprule
+Task & Dataset support and project construction\\\midrule
+1 & Captions provide BERT inputs; TRAIN-selected aspects define the shared multi-label target.\\
+2 & Paired audio provides mel features and segment graphs; the same aspect-derived labels supervise CNN/GNN classifiers.\\
+3 & Caption and audio share a track identity, enabling aligned graph--text fusion with unchanged targets.\\
+4 & Original audio--caption pairs define contrastive positives and bidirectional retrieval; descriptions also support listener judgments.\\\bottomrule
+\end{tabular}
+\end{table}
+
+Using one corpus reduces confounding from changing datasets, annotation systems, or test populations between the text, audio, and fusion comparisons. Its descriptions cover audible instrumentation, tempo, mood, and recording characteristics that match the project's context-prediction objective. Ten-second clips also provide a consistent unit for fixed-length feature extraction and segment graphs. The recovered 5,140 examples exceeded the predefined 3,000-clip acquisition gate, allowing MusicCaps to remain the canonical dataset without introducing label-generated substitute captions.
+
+The choice is suitable for a controlled course-scale study, rather than evidence that MusicCaps exhaustively represents musical context. Tasks 1--3 use an aspect-derived proxy target, with unresolved caption--label overlap; Task 4 uses the original pairing more directly. The corpus does not supply the emotion-regression targets needed for that optional extension. These boundaries motivate the shared-dataset design while limiting the claims drawn from it.
+
 \subsection{Acquisition and canonical split}
-The initial metadata contained 5,521 unique track and source IDs, with no missing captions or aspect lists. A deterministic 200-track audit at seed 42 yielded 188 usable clips. Some approximately 20-second downloads were investigated for temporal alignment; the intended interval lay in the final approximately ten-second region for affected artifacts. Full acquisition initially recovered 4,847 clips and controlled recovery increased this to 5,140. Table~\ref{tab:data} records the final dataset boundary.
+The initial metadata contained 5,521 unique track and source IDs, with no missing captions or aspect lists. MusicCaps distributes source identifiers and timestamps, so acquisition requires retrieving the corresponding audio and extracting the annotated interval~\cite{musiccaps}. The project used yt-dlp and FFmpeg, converting accepted audio to mono 22,050-Hz PCM-16 WAV. A deterministic 200-track audit at seed 42 yielded 188 usable clips, establishing a 94\% pilot recovery rate before full acquisition.
+
+Acquisition was treated as a validation stage rather than a download-only step. Independent decoding checked the retrieved WAV files. Some approximately 20-second downloads were investigated for temporal alignment; the intended interval lay in the final approximately ten-second region for affected artifacts. Blindly taking the first ten seconds would therefore have risked mismatching the audio with its caption. Full acquisition initially recovered 4,847 clips and controlled recovery increased this to 5,140. The remaining 381 clips were excluded, yielding 93.10\% usable data. Table~\ref{tab:data} records the final dataset boundary. Exclusions are retained as a coverage limitation, not replaced with synthesized examples.
 \begin{table}[t]
 \caption{Audited dataset and feature specification.}\label{tab:data}
 \centering\small
@@ -102,6 +124,8 @@ Nodes / raw node dimension & 9 / 140\\\bottomrule
 The split was frozen before vocabulary construction. Track/source identity overlap was checked, but artist and recording near-duplicate isolation was not independently established. All tasks retain the same canonical MusicCaps examples. This supports cross-task comparability while deviating from the assignment's specific Task-2/3 references to GTZAN, FMA, or MagnaTagATune. Those datasets were not used, and results on them are not claimed.
 
 \subsection{Text and labels}
+Preprocessing follows a fixed dependency order: freeze the usable track set and split, derive vocabulary and token length from TRAIN, generate aligned audio/text/graph caches, and verify their identities before training. This separates decisions learned from data from deterministic feature extraction. The shared track ID is the alignment key across modalities, preventing an apparently valid feature matrix from being paired with the wrong caption or label row.
+
 Multiword aspects were preserved, normalized, conservatively synonym-merged, and frequency-filtered using TRAIN only before freezing the Top-20 vocabulary. The full label order appears in Appendix~\ref{sec:appendix}. The target is a caption-to-aspect proxy task for text models. The degree of direct phrase or synonym overlap between captions and labels was not measured.
 
 Tokenization uses \texttt{bert-base-uncased}. The TRAIN 95th-percentile length was 97 tokens; the chosen maximum of 112 gave 1.43\% TRAIN truncation. This empirical choice replaces the assignment's suggested 128--256 range. The frozen token cache contains input IDs, attention masks, and token-type IDs of shape $(5140,112)$. Applying the fixed tokenizer to TEST during preprocessing is distinct from using TEST labels or metrics for model selection.
@@ -146,6 +170,9 @@ Validation mean recall selects T4-B before TEST. Retrieval then uses normalized 
 For human evaluation, ten query indices and seed 42 were fixed before inspecting TEST retrieval. The listening study uses the top-one audio retrieval for each fixed caption query. The supplied HTML asks listeners to read each caption, hear the complete clip, and independently assign one rating: 1 no match, 2 weak match, 3 moderate match, 4 good match, or 5 excellent match. It requires a listener ID and all ten ratings before CSV export, but does not technically enforce complete playback. Five listeners provide a complete 50-rating design.
 
 \section{Experimental Setup}\label{sec:setup}
+\subsection{Compute environment}
+Experiments were conducted in Ubuntu 22.04 running through Windows Subsystem for Linux (WSL) on a Windows host. The workstation used an Intel Core i7-14700K processor (3.40 GHz), 64.0 GB installed RAM (63.8 GB usable), and an NVIDIA GeForce RTX 4080 SUPER with 16 GB graphics memory. The host was a 64-bit operating system on an x64-based processor. These hardware and operating-system details document the execution environment; they do not substitute for the unavailable package, driver, and CUDA version records.
+
 \subsection{Selection, baselines, and metrics}
 The final seed set is 42, 1337, and 2026. BERT, CNN, and M3 have three-seed supervised TEST results; GraphSAGE, GAT, and cross-attention are single-seed reporting comparisons. The majority baseline learns each label's majority class from TRAIN and uses TRAIN prevalence as the constant threshold-free score. This separates a trivial prior baseline from the learned models.
 
@@ -154,9 +181,9 @@ Macro Average Precision is the mean of per-label \texttt{average\_precision\_sco
 For retrieval over $N=514$, the positive rank is one plus the number of candidates with strictly greater similarity. Exact ties do not outrank the positive. Recall at $K$ counts true pairs within the first $K$ positions; $mR$ averages R@1, R@5, and R@10 in both directions. Random ranking gives $mR=(1+5+10)/(3\cdot514)\approx0.0104$. A single query changes directional recall by $1/514\approx0.00195$.
 
 \subsection{Reproducibility and numerical conventions}
-Script 29 freezes preprocessing through SHA256 identities. Script 60 first opens target-dependent supervised TEST evaluation after model and threshold selection. Task 4 locks design, selection, multiseed validation, and pre-TEST protocol before Script 72 retrieval evaluation. Subsequent analyses reuse saved outputs. Aborted stale-cache or numerical revalidation attempts are retained as provenance; implementation corrections in Scripts 57, 68, and 70 preceded the relevant TEST access and did not justify changing the frozen scientific choices.
+The preprocessing verification stage freezes dataset, feature, and target artifacts through SHA256 identities. Final target-dependent supervised TEST evaluation begins only after model and threshold selection. Task 4 locks design, selection, multiseed validation, and pre-TEST protocol before final retrieval evaluation. Subsequent analyses reuse saved outputs. Aborted stale-cache or numerical revalidation attempts are retained as provenance; implementation corrections during threshold freezing, contrastive fine-tuning, and multiseed validation preceded the relevant TEST access and did not justify changing the frozen scientific choices.
 
-Supervised seed uncertainty uses sample SD ($\mathrm{ddof}=1$); Task-4 seed uncertainty uses population SD ($\mathrm{ddof}=0$). Human pooled and item SDs use sample SD. These quantities describe different sources of variability and are not confidence intervals. Fusion and contrastive seeds may condition on shared supervised initialization; they do not establish variability of independently rebuilt end-to-end pipelines. Final BERT evaluation uses FP16 autocast, whereas the other supervised models use FP32. Exact GPU model, elapsed training time, complete package versions, and Git commit are unavailable in the provided evidence.
+Supervised seed uncertainty uses sample SD ($\mathrm{ddof}=1$); Task-4 seed uncertainty uses population SD ($\mathrm{ddof}=0$). Human pooled and item SDs use sample SD. These quantities describe different sources of variability and are not confidence intervals. Fusion and contrastive seeds may condition on shared supervised initialization; they do not establish variability of independently rebuilt end-to-end pipelines. Final BERT evaluation uses FP16 autocast, whereas the other supervised models use FP32. Elapsed training time, complete package versions, and Git commit are unavailable in the provided evidence.
 
 \section{Results}\label{sec:results}
 \subsection{Tasks 1 and 2: Validation selection}
@@ -267,7 +294,7 @@ Retrieval asks a distinct question and provides complementary evidence. Above-ch
 
 \textbf{Contrastive and human interpretation.} InfoNCE treats other batch items as negatives even when musically similar. Exact-pair metrics penalize plausible alternatives. Prototype readout inherits tag-supervised encoders and is not strict label-naive zero-shot learning. Five listeners and ten fixed queries support descriptive conclusions only; a robust inter-rater reliability analysis is absent. The provided HTML records a listening instruction, not proof of playback compliance.
 
-\textbf{Provenance coverage.} The independent audit cannot certify the full source of nine scripts (07--12, 18, 62, 63). Git commit, full environment, and some training hyperparameters are unavailable. The Task-3 comparator in Task-4 consolidation is report-level rather than fully linked through the Task-4 hash chain; the separate Task-3 final JSON independently supplies the same value. Supplied case-study assets are available at result level, but this does not retroactively certify Scripts 62--63.
+\textbf{Provenance coverage.} The independent audit cannot certify nine source files covering parts of acquisition/recovery, target preparation, and reporting. Git commit, complete software versions, and some training hyperparameters are unavailable. The Task-3 comparator in Task-4 consolidation is report-level rather than fully linked through the Task-4 hash chain; the separate Task-3 final JSON independently supplies the same value. Supplied case-study assets are available at result level, but this does not establish source-level verification of the reporting stages.
 
 \section{Conclusion and Future Work}\label{sec:conclusion}
 The project establishes a controlled four-task comparison on a frozen 5,140-clip MusicCaps corpus. Fine-tuned BERT is a strong predictor of the aspect-derived targets. Early Fusion recovers approximately the same overall performance and does not reliably surpass it. Contrastive graph--text training learns alignment substantially above random retrieval, while exact-pair accuracy remains modest and human match quality varies. Prototype-based tag readout underperforms supervised classification and requires explicit qualification because of supervised initialization.
@@ -281,9 +308,9 @@ The highest-priority next analysis is a read-only caption--label overlap audit w
 \onecolumn
 \appendices
 \section{Audit, Configuration, and Qualitative Evidence}\label{sec:appendix}
-Table~\ref{tab:audit} summarizes the 76-script audit. ``Not verified'' marks a source-evidence limit, not a confirmed failure. The nine minor-fix entries are 27, 57--59, 61, 68, 70, 73, and 76; Script 25 is redundant. The audit contains the full per-script dispositions.
+Table~\ref{tab:audit} summarizes the implementation audit. ``Not verified'' marks a source-evidence limit, not a confirmed failure. Minor corrections concern sparse-graph design rationale, numerical revalidation, seed interpretation, reporting-only thresholds, exploratory error analysis, prototype-readout terminology, and final-result provenance. An early graph-threshold probe was superseded by a larger TRAIN-only structural study.
 \begin{table}[!ht]\centering\small
-\caption{Final audit disposition of 76 scripts.}\label{tab:audit}
+\caption{Implementation audit summary across 76 source files.}\label{tab:audit}
 \begin{tabular}{@{}lr@{}}\toprule
 Disposition & Count\\\midrule
 KEEP & 57\\

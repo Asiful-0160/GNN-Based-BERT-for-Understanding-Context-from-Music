@@ -1,6 +1,6 @@
 # Repository review — 12 September 2026
 
-The report uses CSE715 only. All three author names, IDs, and BRAC University match the supplied details. The final nine-page PDF was rebuilt with a consistent LaTeX/BibTeX sequence after discovering stale auxiliary files from mixed build locations.
+The report uses CSE715 only. All three author names, IDs, and BRAC University match the supplied details. The final eleven-page PDF was rebuilt with a consistent LaTeX/BibTeX sequence after discovering stale auxiliary files from mixed build locations.
 
 Checks completed:
 
@@ -21,3 +21,7 @@ Remaining limitations:
 - Git currently shows the project files as untracked. This review does not create a commit or claim versioned source provenance.
 
 Build intermediates are excluded from the Overleaf ZIP. The intended deliverables are `main.tex`, `references.bib`, `figures/`, `final_report.pdf`, and the supporting review/verification notes.
+
+Latest revision: user-supplied hardware/WSL environment added, dataset rationale and acquisition/preprocessing expanded, and two primary-source research citations verified. The ten-page rebuild has resolved citations, no overfull boxes, and inspected rendered pages.
+
+Layout revision: contents now occupies its own page; Introduction starts on the next page. Eleven pages total, permitted by the revised page-budget preference. Page references and compilation checks pass.

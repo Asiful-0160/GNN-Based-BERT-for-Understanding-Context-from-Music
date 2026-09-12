@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.30)  12 SEP 2026 18:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.30)  12 SEP 2026 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,123 +483,148 @@ t/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (main.toc)
 
 
 
+[1]
+Underfull \hbox (badness 1931) in paragraph at lines 51--52
+[]\T1/ptm/m/n/10 Published work also uses Mu-s-ic-Caps for closely re-
+ []
 
-Underfull \hbox (badness 2326) in paragraph at lines 102--103
+
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 91--92
+[]|\T1/ptm/m/n/9 Paired au-dio pro-vides mel fea-tures and seg-ment
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 91--92
+\T1/ptm/m/n/9 graphs; the same aspect-derived la-bels su-per-vise
+ []
+
+
+
+[2
+
+
+]
+Underfull \hbox (badness 2326) in paragraph at lines 124--125
 []\T1/ptm/m/n/10 The split was frozen be-fore vo-cab-u-lary con-struc-tion.
  []
 
 
+Underfull \vbox (badness 1199) has occurred while \output is active []
 
-[1
 
-]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-7.
- (C:\Users\ghost\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 13
+1.
+(C:\Users\ghost\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-<figures/figure_G2_hard_case_graph.png, id=120, 715.1445pt x 339.012pt>
+[3]
+<figures/figure_G2_hard_case_graph.png, id=143, 715.1445pt x 339.012pt>
 File: figures/figure_G2_hard_case_graph.png Graphic file (type png)
 <use figures/figure_G2_hard_case_graph.png>
 Package pdftex.def Info: figures/figure_G2_hard_case_graph.png  used on input l
-ine 116.
+ine 140.
 (pdftex.def)             Requested size: 252.0pt x 119.45776pt.
 
 
-[2 <./figures/figure_G2_hard_case_graph.png>]
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 152--153
+[4 <./figures/figure_G2_hard_case_graph.png>]
+Underfull \hbox (badness 4366) in paragraph at lines 179--180
 []\T1/ptm/m/n/10 Macro Av-er-age Pre-ci-sion is the mean of per-label
  []
 
-<figures/figure_training_T1B.png, id=141, 607.3965pt x 389.9295pt>
+<figures/figure_training_T1B.png, id=162, 607.3965pt x 389.9295pt>
 File: figures/figure_training_T1B.png Graphic file (type png)
 <use figures/figure_training_T1B.png>
-Package pdftex.def Info: figures/figure_training_T1B.png  used on input line 17
-7.
+Package pdftex.def Info: figures/figure_training_T1B.png  used on input line 20
+4.
 (pdftex.def)             Requested size: 167.69843pt x 107.65636pt.
-<figures/figure_training_A1_CNN.png, id=142, 607.3965pt x 389.9295pt>
+<figures/figure_training_A1_CNN.png, id=163, 607.3965pt x 389.9295pt>
 File: figures/figure_training_A1_CNN.png Graphic file (type png)
 <use figures/figure_training_A1_CNN.png>
 Package pdftex.def Info: figures/figure_training_A1_CNN.png  used on input line
- 178.
+ 205.
 (pdftex.def)             Requested size: 167.69843pt x 107.65636pt.
-<figures/figure_training_M3_phaseB.png, id=143, 607.3965pt x 389.9295pt>
+<figures/figure_training_M3_phaseB.png, id=164, 607.3965pt x 389.9295pt>
 File: figures/figure_training_M3_phaseB.png Graphic file (type png)
 <use figures/figure_training_M3_phaseB.png>
 Package pdftex.def Info: figures/figure_training_M3_phaseB.png  used on input l
-ine 179.
+ine 206.
 (pdftex.def)             Requested size: 167.69843pt x 107.65636pt.
 
 
-[3]
-Underfull \hbox (badness 2452) in paragraph at lines 195--196
+
+Underfull \hbox (badness 2452) in paragraph at lines 222--223
 \T1/ptm/m/n/10 2026. The ex-ploratory paired-bootstrap 95% in-ter-val is
  []
 
-<figures/figure_final_auc_pr.png, id=159, 715.8015pt x 411.6105pt>
+<figures/figure_final_auc_pr.png, id=168, 715.8015pt x 411.6105pt>
 File: figures/figure_final_auc_pr.png Graphic file (type png)
 <use figures/figure_final_auc_pr.png>
-Package pdftex.def Info: figures/figure_final_auc_pr.png  used on input line 21
-1.
+Package pdftex.def Info: figures/figure_final_auc_pr.png  used on input line 23
+8.
 (pdftex.def)             Requested size: 252.0pt x 144.90744pt.
-<figures/task4_test_recall_at_k.png, id=165, 562.1pt x 342.881pt>
+<figures/task4_test_recall_at_k.png, id=174, 562.1pt x 342.881pt>
 File: figures/task4_test_recall_at_k.png Graphic file (type png)
 <use figures/task4_test_recall_at_k.png>
 Package pdftex.def Info: figures/task4_test_recall_at_k.png  used on input line
- 230.
+ 257.
 (pdftex.def)             Requested size: 252.0pt x 153.7195pt.
 
 
-<figures/task4_human_ratings.png, id=169, 546.04pt x 338.866pt>
+[5]
+
+<figures/task4_human_ratings.png, id=192, 546.04pt x 338.866pt>
 File: figures/task4_human_ratings.png Graphic file (type png)
 <use figures/task4_human_ratings.png>
-Package pdftex.def Info: figures/task4_human_ratings.png  used on input line 24
-8.
+Package pdftex.def Info: figures/task4_human_ratings.png  used on input line 27
+5.
 (pdftex.def)             Requested size: 252.0pt x 156.38696pt.
 
-
-[4]
-
-
-
-[5 <./figures/figure_training_T1B.png> <./figures/figure_training_A1_CNN.png> <
-./figures/figure_training_M3_phaseB.png> <./figures/figure_final_auc_pr.png> <.
-/figures/task4_test_recall_at_k.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-(main.bbl)
+[6 <./figures/figure_training_T1B.png> <./figures/figure_training_A1_CNN.png> <
+./figures/figure_training_M3_phaseB.png> <./figures/figure_final_auc_pr.png> <.
+/figures/task4_test_recall_at_k.png>]
 
-[6 <./figures/task4_human_ratings.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+
+
+[7 <./figures/task4_human_ratings.png>] (main.bbl
+
+)
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
 []|\T1/ptm/m/n/9 instrumental; medium
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 []\T1/ptm/m/n/10 The pre-train-ing lock SHA256 is \T1/pcr/m/n/10 caffa90d9de726
 a6a28fb15b2ee0e28f4abac8f0766c90d5
  []
 
 
-Underfull \hbox (badness 5622) in paragraph at lines 346--347
+Underfull \hbox (badness 5622) in paragraph at lines 373--374
 \T1/pcr/m/n/10 b0e027a6c917b4e8\T1/ptm/m/n/10 . The Task-3 eval-u-a-tion hash r
 ecorded by the as-set man-i-fest is \T1/pcr/m/n/10 8c6db5aed0cd23b7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 \T1/ptm/m/n/10 is \T1/pcr/m/n/10 712bb131762a9791550db2a4b98aa271824c9c878f54d9
 ef7fe4917c846a3413\T1/ptm/m/n/10 . These are prove-nance
  []
 
 
 
-[7
+[9
 
 
 ]
@@ -616,22 +641,22 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[8] (main.aux)
+[10] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B5E9789F2DE80812FF7AB75828115494;2162.
+(rerunfilecheck)             Checksum: 503EA1BE5A56A2FBFC11CF34A6FD6C11;2225.
  ) 
 Here is how much of TeX's memory you used:
- 11197 strings out of 473535
- 175626 string characters out of 5714935
- 590174 words of memory out of 5000000
- 34195 multiletter control sequences out of 15000+600000
+ 11207 strings out of 473535
+ 175723 string characters out of 5714935
+ 588323 words of memory out of 5000000
+ 34198 multiletter control sequences out of 15000+600000
  677773 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1692b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1692b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ghost/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/ghost/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/ghost/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -651,9 +676,9 @@ ublic/amsfonts/symbols/msbm10.pfb><C:/Users/ghost/AppData/Local/Programs/MiKTeX
 eX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ghost/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ghost/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 915272 bytes).
+Output written on main.pdf (11 pages, 924412 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

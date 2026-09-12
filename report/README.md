@@ -1,6 +1,6 @@
 # GNN–BERT project report
 
-The report is compiled and layout-checked in IEEEtran conference format, with a title/abstract page, two-column main text, and a readable single-column appendix. It is nine pages including all front matter and appendices. The authors are Mohammed Ali Hossain (21301453), Jarin Akter Mou (20301070), and Asiful Kanzan Auishik (19101628), BRAC University.
+The report is compiled and layout-checked in IEEEtran conference format, with a title/abstract page, a separate contents page, two-column main text, and a readable single-column appendix. It is eleven pages including all front matter and appendices. The authors are Mohammed Ali Hossain (21301453), Jarin Akter Mou (20301070), and Asiful Kanzan Auishik (19101628), BRAC University.
 
 ## Files
 
@@ -26,3 +26,7 @@ From this directory, use `pdflatex main.tex`, `bibtex main`, then `pdflatex main
 Sources read: `Project_Guideline.pdf`; the Task-1–4 independent audit exported on 12 September 2026 at 16:02; the master prompt; the RESULTS JSON/CSV export; and `index.html`. Source files are unchanged. Local verification finds no hash mismatches among the checked manifest entries and no unresolved LaTeX source references. Bibliographic claims were checked against ACL Anthology, NeurIPS proceedings, arXiv, PMLR, and Google's MusicCaps dataset card.
 
 The report preserves the fusion negative result, caption/aspect circularity, qualified prototype readout, dataset deviation, partial source audit, and other audited caveats. Supervised uncertainty uses sample seed SD; Task-4 uncertainty uses population seed SD. Original plots retain legacy AP naming, clarified in the report captions. No model was retrained, no inference was run, and no experimental metric was retuned or recomputed.
+
+## Dataset and compute revision
+
+Experimental Setup now records Ubuntu 22.04 on Windows through WSL, Intel Core i7-14700K (3.40 GHz), 64.0 GB installed RAM (63.8 GB usable), RTX 4080 SUPER (16 GB), and a 64-bit/x64 host, as supplied by the authors. Dataset Acquisition and Preprocessing now explicitly justifies MusicCaps for each task and explains acquisition checks, controlled recovery, and the TRAIN-only preprocessing sequence. Two verified studies were added: Srivatsan et al. (IJCAI 2024) and Wu et al. (Findings ACL 2025). Their protocols are distinguished from this report, with no cross-paper performance ranking.
